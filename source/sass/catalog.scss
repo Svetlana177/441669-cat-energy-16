@@ -1,0 +1,66 @@
+.catalog {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.catalog__header {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 1.67;
+  color: #111111;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.catalog__item {
+  margin-bottom: 24px;
+}
+
+.catalog-show__text {
+  text-align: center;
+  font-family: $font-arial;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $main-color;
+}
+
+.catalog__product {
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $second-color;
+  text-transform: uppercase;
+}
+
+.catalog-table {
+  font-family: $font-arial;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: $main-color;
+}
+
+.catalog-button__show {
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: $second-color;
+}

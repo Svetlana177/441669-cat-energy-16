@@ -1,0 +1,50 @@
+.program {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.program__list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.program__item {
+  background-color: $color-grey;
+  list-style: none;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  padding: 40px 35px 40px 20px;
+}
+
+.program__title {
+  font-size: 24px;
+  line-height: 1.54;
+  text-transform: uppercase;
+  color: $second-color;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.program__link {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $second-color;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.program__description {
+  font-family: $font-arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: $main-color;
+  padding: 0 36px 0 21px;
+}

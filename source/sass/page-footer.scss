@@ -1,0 +1,27 @@
+.page-footer {
+  background-color: $color-grey;
+  padding: 39px 20px 21px;
+  box-sizing: border-box;
+}
+
+.copyright__develop {
+  width: 112px;
+  height: 16px;
+  font-family: $font-arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.social__list {
+  display: flex;
+  padding: 53px 0 53px;
+}
+
+.page-footer__social {
+  text-align: center;
+}

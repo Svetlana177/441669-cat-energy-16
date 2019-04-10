@@ -1,0 +1,24 @@
+.page-food {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 29px 35px 168px 36px;
+  box-sizing: border-box;
+  margin-bottom: 136px;
+}
+
+.page-food__header {
+  font-family: $font-oswald;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0;
+  color: $color-sub;
+}
+
+.page-food__info {
+  font-size: 14px;
+  line-height: 1;
+  color: $color-sub;
+  text-transform: uppercase;
+}
