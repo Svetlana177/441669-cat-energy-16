@@ -10,18 +10,3 @@
   padding: 18px 64px 16px;
   text-align: center;
 }
-
-.catalog-button {
-  font-size: 16px;
-}
-
-.catalog-button__show {
-  background-color: $color-sub;
-  color: $second-color;
-  padding: 18px 28px 16px;
-
-  &--all {
-    background-color: $color-grey;
-    color: $main-color;
-  }
-}
