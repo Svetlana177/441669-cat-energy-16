@@ -1,0 +1,32 @@
+.description {
+  margin: 0 auto;
+  margin-bottom: 43px;
+}
+
+.description__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 1.67;
+  color: $second-color;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 20px;
+}
+
+.description__list {
+  font-family: $font-arial;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  color: $main-color;
+
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  padding-left: 100px;
+}

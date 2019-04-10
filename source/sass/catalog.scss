@@ -1,0 +1,31 @@
+.catalog {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.catalog__header {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 1.67;
+  color: #111111;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.catalog__item {
+  margin-bottom: 24px;
+}
+
+.catalog__product {
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: $second-color;
+  text-transform: uppercase;
+}
