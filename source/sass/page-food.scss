@@ -1,10 +1,9 @@
 .page-food {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   text-align: center;
-  padding: 29px 35px 168px 36px;
   box-sizing: border-box;
-  margin-bottom: 136px;
 }
 
 .page-food__header {
@@ -14,6 +13,7 @@
   font-weight: 400;
   margin: 0;
   color: $color-sub;
+  padding: 29px 35px 19px 36px;
 }
 
 .page-food__info {
@@ -21,4 +21,45 @@
   line-height: 1;
   color: $color-sub;
   text-transform: uppercase;
+  padding: 0 0 29px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-food {
+    width: 414px;
+    background: none;
+    margin-bottom: 0;
+    min-height: 762px;
+    margin-left: 120px;
+  }
+
+  .page-food__info {
+    font-size: 22px;
+    color: $second-color;
+    text-align: left;
+  }
+
+  .page-food__header {
+    color: $second-color;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-food {
+    display: flex;
+    width: 720px;
+    min-height: 1px;
+  }
+
+  .page-food__header {
+    margin-bottom: 0;
+  }
 }

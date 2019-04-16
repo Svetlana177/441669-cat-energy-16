@@ -1,4 +1,4 @@
-.page-footer {
+.page-footer__wrapper {
   background-color: $color-grey;
   padding: 39px 20px 21px;
   box-sizing: border-box;
@@ -6,4 +6,33 @@
 
 .page-footer__social {
   text-align: center;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 63px 30px 64px 31px;
+  }
+
+  .page-footer__social {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding: 110px 64px 110px 62px;
+  }
+
+  .page-footer__social {
+    width: 750px;
+  }
 }

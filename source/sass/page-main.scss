@@ -1,0 +1,21 @@
+.page-main {
+  margin: 0 auto;
+}
+
+.page-main__img {
+  width: 280px;
+  height: 271px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    background: none;
+  }
+
+  .page-main__wrapper {
+    margin-top: 77px;
+    margin-bottom: 129px;
+    margin-left: 109px;
+    margin-right: 10px;
+  }
+}

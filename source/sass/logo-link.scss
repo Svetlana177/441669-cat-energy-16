@@ -7,6 +7,14 @@
   text-align: center;
   color: $second-color;
   text-transform: uppercase;
-  padding: 24px 71px 20px 70px;
   width: 179px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-link {
+    width: 128px;
+    margin: 0;
+  }
 }

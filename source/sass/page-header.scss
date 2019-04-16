@@ -1,3 +1,20 @@
-.page-header {
-  padding: 11px 0 20px;
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    margin: 47px 30px 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    margin-top: 13px;
+    margin-bottom: 89px;
+    margin-left: 109px;
+    margin-right: 10px;
+  }
 }

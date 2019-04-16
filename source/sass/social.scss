@@ -1,4 +1,19 @@
 .social__list {
+  list-style: none;
+  margin: 0;
   display: flex;
   padding: 53px 0 53px;
+  justify-content: space-between;
+}
+
+.social__link {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding: 0;
+  }
 }
