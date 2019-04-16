@@ -39,7 +39,6 @@
     "node": "8.15"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1",
     "posthtml-include": "^1.2.0"
   }
 }
