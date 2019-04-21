@@ -12,6 +12,7 @@
   color: $second-color;
   font-weight: 400;
   padding-left: 20px;
+  margin-bottom: 28px;
 }
 
 .description__list {
@@ -26,6 +27,53 @@
   list-style: none;
   width: 200px;
   padding-left: 100px;
+}
+
+.description__food {
+  margin: 0;
+  padding: 3px 0 24px 0;
+}
+
+.description__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -75px;
+    width: 35px;
+    height: 49px;
+    z-index: 2;
+  }
+
+  &--advantage::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--replacement::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--enjoy::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: $background-leaf;
+    top: 0;
+    left: -80px;
+    z-index: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,14 +1,30 @@
 .social__list {
   list-style: none;
-  margin: 0;
+  padding: 0;
   display: flex;
-  padding: 53px 0 53px;
   justify-content: space-between;
+  width: 125px;
+  margin: 24px auto 21px;
 }
 
 .social__link {
   text-decoration: none;
   color: black;
+}
+
+.social__link--vk {
+  width: 22px;
+  height: 12px;
+}
+
+.social__link--insta {
+  width: 17px;
+  height: 17px;
+}
+
+.social__link--fb {
+  width: 10px;
+  height: 19px;
 }
 
 

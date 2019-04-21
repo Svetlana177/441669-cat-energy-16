@@ -1,12 +1,124 @@
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.main-nav {
+  width: 320px;
+  min-height: 199px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background: #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: -43px;
+  left: 26px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: -70px;
+  left: auto;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 35px;
+    left: 27px;
+
+    width: 22px;
+    height: 2px;
+
+    background-color: #222222;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__toggle {
+    background: none;
+    height: 0;
+  }
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+
+  .main-nav.main-nav--closed {
+    min-height: 0;
+  }
+
+  /*В открытом меню обёртка выпадает из потока, все пункты открыты.*/
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    z-index: 10;
+    min-height: 199px;
+    left: 0;
+    right: 0;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--nojs .user-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    width: 436px;
+  .main-nav {
+    width: 452px;
     display: flex;
     margin-left: auto;
   }
@@ -14,15 +126,23 @@
   .main-nav__list {
     display: flex;
   }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    width: 707px;
+    padding-left: 133px;
+    padding-top: 46px;
+  }
+
+  .main-nav {
+    width: 1221px;
     display: flex;
     margin-left: auto;
     margin-bottom: 0;
-    // background: url("../img/index-background-desktop@1x.jpg") no-repeat;
-    // background-size: cover;
+    background: $background-leaf url("../img/index-background-desktop@1x.jpg");
   }
 }

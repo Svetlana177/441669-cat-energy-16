@@ -1,11 +1,15 @@
 .page-footer__wrapper {
   background-color: $color-grey;
-  padding: 39px 20px 21px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 39px 20px 22px;
   box-sizing: border-box;
 }
 
 .page-footer__social {
   text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 31px;
 }
 
 .page-footer__copyright {
@@ -25,6 +29,11 @@
     width: 450px;
     justify-content: space-between;
   }
+}
+
+.page-footer__logo {
+  width: 128px;
+  height: 24px;
 }
 
 @media (min-width: $desktop-width) {
