@@ -4,7 +4,6 @@
 }
 
 .page-header__wrapper {
-  border-bottom: 1px solid #e6e6e6;
   padding-bottom: 11px;
   padding-top: 13px;
   padding-left: 19px;
@@ -37,17 +36,25 @@
   .page-header {
     border-bottom: 1px solid #e6e6e6;
   }
+
+  .page-header__wrapper {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin: 20px 31px 140px 37px;
+    margin: 22px 29px 61px 37px;
     flex-direction: row;
+  }
+
+  .page-header__wrapper {
+    padding: 0;
+    margin-right: 110px;
   }
 
   .page-header__logo {
     height: 83px;
-    margin-right: 96px;
     width: 174px;
   }
 

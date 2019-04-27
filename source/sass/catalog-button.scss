@@ -26,3 +26,14 @@
     color: rgba(68, 68, 68, 0.3);
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .catalog-button {
+    padding: 13px 93px 12px 95px;
+  }
+
+  // .catalog-button__show {
+  //   padding: 13px 79px 12px 81px;
+  // }
+}

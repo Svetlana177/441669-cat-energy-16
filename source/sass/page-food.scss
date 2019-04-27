@@ -27,20 +27,25 @@
 
 @media (min-width: $tablet-width) {
   .page-food {
-    width: 414px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 709px;
     background: none;
-    margin-bottom: 0;
-    min-height: 762px;
-    margin-left: 120px;
+    margin: 0 auto;
   }
 
   .page-food__info {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 1;
     color: $second-color;
     text-align: left;
+    margin-left: 89px;
+    position: relative;
+    padding: 0;
   }
 
   .page-food__header {
+    width: 420px;
     color: $second-color;
     font-size: 60px;
     line-height: 1;
@@ -48,7 +53,7 @@
     font-style: normal;
     text-align: left;
     padding: 0;
-    margin-bottom: 40px;
+    margin: 0 0 40px 87px;
   }
 }
 

@@ -7,6 +7,17 @@
   height: 270px;
 }
 
+@media (min-width: $tablet-width) {
+  .page-main__img {
+    position: relative;
+    z-index: 3;
+    width: 709px;
+    height: 609px;
+    top: 18px;
+    left: 48px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-main {
     background: none;

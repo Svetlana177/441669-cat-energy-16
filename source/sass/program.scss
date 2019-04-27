@@ -94,6 +94,7 @@
   }
 
   cursor: pointer;
+
   &:active {
     opacity: 0.3;
   }
@@ -114,10 +115,9 @@
 }
 
 .program__wrapper {
-  margin-top: 20px;
-  margin-bottom: 18px;
+  margin-top: 21px;
+  margin-bottom: 44px;
 }
-
 
 @media (min-width: $tablet-width) {
   .program {
@@ -125,25 +125,76 @@
     padding: 0;
   }
 
-  .program__item {
-    min-height: 297px;
-  }
-
-  .program__title {
-    font-size: 36px;
-    line-height: 1;
-  }
-
-  .program__link {
-    font-size: 20px;
-    line-height: 1.03;
-  }
-
   .program__description {
+    border-bottom: none;
     font-size: 16px;
     line-height: 1.5;
+    padding-bottom: 37px;
+    margin: 24px 0 0 0;
+  }
+
+  .program__item {
+    padding: 78px 271px 60px 53px;
+
+    &::after {
+      width: 200px;
+      height: 200px;
+      margin-right: 0;
+      left: 444px;
+      top: 93px;
+    }
+
+    &--loss {
+      padding-bottom: 62px;
+      margin-bottom: 29px;
+
+      &::before {
+        top: 81px;
+        width: 140px;
+        height: 194px;
+        left: 475px;
+      }
+    }
+
+    &--set {
+      padding-right: 311px;
+
+      &::before {
+        top: 133px;
+        left: 413px;
+        width: 268px;
+        height: 112px;
+      }
+    }
+
+    .program__title {
+      font-size: 36px;
+      line-height: 1.03;
+      text-align: left;
+      padding: 0;
+    }
+
+    .program__link {
+      font-size: 20px;
+      line-height: 1.03;
+
+      &::after {
+        bottom: 67px;
+        left: 183px;
+      }
+    }
+  }
+
+  .program__food {
+    position: absolute;
+    top: 368px;
+    left: 247px;
+    z-index: 1;
+    font-size: 20px;
+    padding: 16px 29px 13px 26px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .program {
@@ -167,7 +218,7 @@
     margin-bottom: 79px;
   }
 
-  .meals__programm {
+  .program__food {
     display: block;
     margin-bottom: 241px;
   }

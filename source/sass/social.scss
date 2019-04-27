@@ -12,17 +12,17 @@
   color: black;
 }
 
-.social__link--vk {
+.social__link-vk {
   width: 22px;
   height: 12px;
 }
 
-.social__link--insta {
+.social__link-insta {
   width: 17px;
   height: 17px;
 }
 
-.social__link--fb {
+.social__link-fb {
   width: 10px;
   height: 19px;
 }
@@ -31,5 +31,21 @@
 @media (min-width: $tablet-width) {
   .social__list {
     padding: 0;
+    margin: 0 auto;
+  }
+
+  .social__link-vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link-insta {
+    width: 22px;
+    height: 23px;
+  }
+
+  .social__link-fb {
+    width: 14px;
+    height: 28px;
   }
 }

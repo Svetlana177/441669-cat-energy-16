@@ -118,9 +118,13 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 452px;
+    width: 501px;
     display: flex;
-    margin-left: auto;
+    min-height: auto;
+  }
+
+  .main-nav__wrapper {
+    padding-top: 19px;
   }
 
   .main-nav__list {

@@ -42,12 +42,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-list :last-child {
+    padding: 0;
+  }
+
   .site-list__item {
     font-size: 18px;
     line-height: 1.39;
     font-weight: normal;
     padding: 0 33px 0 0;
 
+    & :last-child {
+      padding: 0;
+    }
+  }
+
+  .site-list__link {
     &--active {
       position: relative;
 
@@ -56,17 +66,13 @@
 
         position: absolute;
         right: 0;
-        bottom: -3px;
+        bottom: -10px;
         left: 0;
 
         height: 3px;
 
         background: $background-leaf;
       }
-    }
-
-    .site-list__item:nth-child(3n) {
-      padding: 0;
     }
 
     .site-list a[href] {

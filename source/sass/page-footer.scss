@@ -1,5 +1,8 @@
-.page-footer__wrapper {
+.page-footer {
   background-color: $color-grey;
+}
+
+.page-footer__wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 39px 20px 22px;
@@ -21,7 +24,8 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 63px 30px 64px 31px;
+    width: 707px;
+    padding: 64px 30px 64px 31px;
   }
 
   .page-footer__social {
