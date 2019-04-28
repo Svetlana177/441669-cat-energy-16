@@ -1,6 +1,8 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .page-header__wrapper {
@@ -44,7 +46,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin: 22px 29px 61px 37px;
+    width: 708px;
+    margin: 22px auto 56px;
     flex-direction: row;
   }
 
@@ -66,13 +69,20 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1220px;
+    width: 1440px;
+    padding: 53px 11px 80px 109px;
     margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .page-header__wrapper {
+    width: 720px;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   .page-header__logo {
     height: 113px;
-    margin-right: 523px;
   }
 
   .page-header__logo-image {

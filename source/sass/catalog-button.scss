@@ -32,8 +32,10 @@
   .catalog-button {
     padding: 13px 93px 12px 95px;
   }
+}
 
-  // .catalog-button__show {
-  //   padding: 13px 79px 12px 81px;
-  // }
+@media (min-width: $desktop-width) {
+  .catalog-button {
+    padding: 13px 53px 12px 55px;
+  }
 }

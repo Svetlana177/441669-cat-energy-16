@@ -21,12 +21,13 @@
 @media (min-width: $desktop-width) {
   .page-main {
     background: none;
+    width: 1220px;
   }
 
-  .page-main__wrapper {
-    margin-top: 77px;
-    margin-bottom: 129px;
-    margin-left: 109px;
-    margin-right: 10px;
+  .page-main__img {
+    width: 552px;
+    height: 499px;
+    top: -266px;
+    left: 482px;
   }
 }

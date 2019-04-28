@@ -145,8 +145,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .description__wrapper {
+    width: 1220px;
+  }
+
   .description {
-    min-height: 500px;
+    border-bottom: none;
+  }
+
+  .description__title {
+    margin-bottom: 60px;
   }
 
   .description__list {
@@ -155,7 +163,26 @@
   }
 
   .description__item {
-    width: 220px;
-    margin-right: 87px;
+    margin: 0;
+
+    &--advantage {
+      width: 201px;
+      margin-right: 124px;
+    }
+
+    &--powder {
+      width: 223px;
+      margin-right: 105px;
+    }
+
+    &--replacement {
+      width: 206px;
+      margin-right: 121px;
+    }
+
+    &--enjoy {
+      width: 247px;
+      margin-right: 0;
+    }
   }
 }

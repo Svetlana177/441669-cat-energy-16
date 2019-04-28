@@ -138,15 +138,41 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    padding-left: 133px;
-    padding-top: 46px;
+    width: 720px;
+
+    &--index {
+      width: 510px;
+      margin: 0 auto;
+    }
   }
 
   .main-nav {
-    width: 1221px;
-    display: flex;
-    margin-left: auto;
-    margin-bottom: 0;
-    background: $background-leaf url("../img/index-background-desktop@1x.jpg");
+    width: 756px;
+    // position: relative;
+
+    &--wrapper {
+      content: "";
+      position: absolute;
+      padding: 54px 0 642px;
+
+      top: 0;
+      right: 0;
+      bottom: 0;
+      // padding-bottom: 696px;
+      background-color: #5eaa2f;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: 720px auto;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      z-index: 1;
+    }
+  }
+
+  .main-nav__list {
+    // justify-content: space-between;
+
+    &--form {
+      padding-left: 144px;
+    }
   }
 }

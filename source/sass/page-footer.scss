@@ -32,6 +32,7 @@
     display: flex;
     width: 450px;
     justify-content: space-between;
+    border-bottom: none;
   }
 }
 
@@ -42,10 +43,11 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding: 110px 64px 110px 62px;
+    width: 1220px;
+    padding: 64px 0 0;
   }
 
   .page-footer__social {
-    width: 750px;
+    width: 666px;
   }
 }

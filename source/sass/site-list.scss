@@ -92,21 +92,26 @@
   .site-list__link {
     font-size: 20px;
     line-height: 1.25;
-    color: $color-sub;
-  }
 
-  .site-list__item {
     &--active {
       &::after {
         content: "";
 
         position: absolute;
         right: 0;
-        bottom: -3px;
+        bottom: -11px;
         left: 0;
 
         height: 3px;
 
+        background: $background-leaf;
+      }
+    }
+
+    &--component {
+      color: $color-sub;
+
+      &::after {
         background: $background-base;
       }
     }
