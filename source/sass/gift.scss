@@ -1,0 +1,51 @@
+.gift {
+  width: 280px;
+  margin: 39px auto 0;
+  background: #68b738 url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    top: 24%;
+    left: 38%;
+    background: url("../img/icon-gift.svg");
+  }
+}
+
+.gift__title {
+  width: 159px;
+  font-family: $font-arial;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.25;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 190px;
+  padding-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    width: 708px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-bottom: 76px;
+
+    &::before {
+      top: 43%;
+      left: 14%;
+    }
+  }
+
+  .gift__title {
+    width: 159px;
+    font-family: "Arial", sans-serif;
+    text-align: left;
+    padding-top: 88px;
+    padding-bottom: 52px;
+    padding-left: 59%;
+  }
+}

@@ -2,7 +2,8 @@
   font-size: 16px;
   line-height: 1.25;
   margin: 0 auto;
-  padding: 13px 108px 12px 111px;
+  padding: 13px 106px 12px 111px;
+  word-break: break-all;
 }
 
 .catalog-button__show {
@@ -30,7 +31,11 @@
 
 @media (min-width: $tablet-width) {
   .catalog-button {
-    padding: 13px 93px 12px 95px;
+    padding: 13px 91px 12px 95px;
+
+    &--else {
+      padding: 13px 283px 12px 282px;
+    }
   }
 }
 
