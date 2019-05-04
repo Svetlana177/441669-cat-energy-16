@@ -1,0 +1,130 @@
+.contacts {
+  &--wrapper {
+    background-color: $color-grey;
+  }
+}
+
+.contacts__map {
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contacts__wrapper {
+  display: flex;
+  width: 276px;
+  padding: 33px 0 28px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.contacts__map-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 53px;
+    background: url("../img/map-pin.png");
+    top: 45%;
+    left: 40%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.contacts-map {
+  width: 320px;
+  height: 400px;
+}
+
+.contacts__description {
+  width: 130px;
+  font-weight: 500;
+  margin-right: 19px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $second-color;
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    &--wrapper {
+      background-color: $color-grey;
+    }
+  }
+
+  .contacts__wrapper {
+    width: 768px;
+    padding: 69px 64px 59px 41px;
+    box-sizing: border-box;
+  }
+
+  .contacts__description {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .contacts__adress {
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 1.25;
+    width: 157px;
+    text-align: right;
+  }
+
+  .contacts__map,
+  .contacts-map {
+    width: 767px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contacts__map-wrapper {
+    &::after {
+      width: 113px;
+      height: 106px;
+      top: 39%;
+      left: 43%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map {
+    width: 100%;
+  }
+
+  .contacts-map {
+    width: 100%;
+  }
+
+  .contacts__map-wrapper::after {
+    top: 39%;
+    left: 70%;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    left: 139px;
+    z-index: 2;
+    background: #ffffff;
+    padding-top: 45px;
+    margin-top: 95px;
+  }
+
+  .contacts__description {
+    padding-left: 19px;
+  }
+}

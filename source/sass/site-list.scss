@@ -1,36 +1,119 @@
-.site-list__item {
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
   line-height: 1;
-  letter-spacing: normal;
-  text-align: center;
-  color: $second-color;
   text-transform: uppercase;
-  padding: 24px 51px 20px 50px;
+  text-align: center;
+  letter-spacing: normal;
 }
 
 .site-list__link {
+  display: block;
+  padding: 22px 0;
+
   color: $second-color;
   text-decoration: none;
+  cursor: pointer;
+
+  &--padding {
+    padding-bottom: 24px;
+  }
+}
+
+.site-list a[href] {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .site-list__item {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .site-list :last-child {
+    padding: 0;
+  }
+
   .site-list__item {
     font-size: 18px;
     line-height: 1.39;
-    padding: 0 20px 0 0;
+    font-weight: normal;
+    padding: 0 33px 0 0;
+
+    & :last-child {
+      padding: 0;
+    }
   }
 
-  .site-list__item:nth-child(3n) {
-    padding: 0;
+  .site-list__link {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+
+        height: 3px;
+
+        background: $background-leaf;
+      }
+    }
+
+    .site-list a[href] {
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
+
 @media (min-width: $desktop-width) {
-  .site-list__item {
+  .site-list__link {
     font-size: 20px;
     line-height: 1.25;
-    color: $color-sub;
+
+    &--active {
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: -11px;
+        left: 0;
+
+        height: 3px;
+
+        background: $background-leaf;
+      }
+    }
+
+    &--component {
+      color: $color-sub;
+
+      &::after {
+        background: $background-base;
+      }
+    }
   }
 }

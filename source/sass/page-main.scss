@@ -4,7 +4,18 @@
 
 .page-main__img {
   width: 280px;
-  height: 271px;
+  height: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__img {
+    position: relative;
+    z-index: 3;
+    width: 709px;
+    height: 609px;
+    top: 18px;
+    left: 48px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -12,10 +23,10 @@
     background: none;
   }
 
-  .page-main__wrapper {
-    margin-top: 77px;
-    margin-bottom: 129px;
-    margin-left: 109px;
-    margin-right: 10px;
+  .page-main__img {
+    width: 552px;
+    height: 499px;
+    top: -266px;
+    left: 475px;
   }
 }
