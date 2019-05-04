@@ -178,6 +178,7 @@
   }
 
   .catalog__header-wrapper {
+    width: 606px;
     border-bottom: none;
     padding: 0;
   }
@@ -255,11 +256,6 @@
       margin-bottom: 75px;
     }
   }
-
-    .catalog__header-wrapper {
-      width: 606px;
-  }
-
 
   .catalog__header-wrapper--products::after {
     width: 299px;
@@ -345,11 +341,30 @@
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1220px;
+
+    &--flex {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 86px;
+    }
+  }
+
+  .catalog__wrapper {
+    &--food {
+      width: 900px;
+      margin-right: 74px;
+    }
   }
 
   .catalog__block {
     width: 169px;
     margin: 33px auto 0;
+
+    &--price {
+      margin: 8px auto 0;
+      width: 284px;
+      text-align: left;
+    }
   }
 
   .catalog__product {
@@ -373,7 +388,7 @@
     width: 245px;
     margin-right: 80px;
     padding: 0;
-    padding-bottom: 30px;
+    padding-bottom: 26px;
     padding-left: 39px;
     padding-right: 39px;
     // background-color: rgba(173, 255, 47, 0.5);
@@ -382,18 +397,42 @@
       background: none;
       border: 1px solid #e6e6e6;
     }
-  }
 
-  .catalog__list li:nth-child(2n) {
-    margin-right: 80px;
-  }
+    .catalog__list li:nth-child(2n) {
+      margin-right: 80px;
+    }
 
-  .catalog__list li:nth-child(4n) {
-    margin-right: 0;
+    .catalog__list li:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &--width {
+      width: 900px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+    }
   }
 
   .catalog__header-wrapper {
     padding: 0;
+
+    &--products {
+      width: 354px;
+      margin: 0;
+    }
+  }
+
+  .catalog__header-wrapper--products::after {
+    width: 957px;
+    left: 373px;
+  }
+
+  .catalog__header-wrapper--products::before {
+    width: 70px;
+    left: -110px;
   }
 
   .catalog__header {
@@ -402,5 +441,13 @@
 
   .catalog__list {
     width: 1220px;
+  }
+
+  .catalog__food {
+    width: 160px;
+    font-size: 20px;
+    margin: 0;
+    padding: 27px 0 26px;
+    margin-right: 123px;
   }
 }

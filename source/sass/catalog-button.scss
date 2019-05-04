@@ -41,6 +41,11 @@
 
 @media (min-width: $desktop-width) {
   .catalog-button {
-    padding: 13px 53px 12px 55px;
+    padding: 13px 52px 12px 53px;
+
+    &--else {
+      padding: 13px 91px 12px 93px;
+      margin: 15px 0;
+    }
   }
 }
