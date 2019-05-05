@@ -31,6 +31,7 @@ body {
   // background: $background-base url("../img/cat-energy-index-mobile1.png") no-repeat 50% 90.5%;
   // background: $background-base url("../img/cat-energy-index-mobile_open.jpg") no-repeat 50% 0;
   // background: $background-base url("../img/cat-energy-catalog-mobile.png") no-repeat 50% -129%;
+  // background: url("../img/cat-energy-form-mobile.jpg") no-repeat 50% 0;
 }
 
 img {
@@ -38,7 +39,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -66,5 +67,6 @@ img {
   body {
     // background: $background-base url("../img/cat-energy-index-desktop1.png") no-repeat 50% 0;
     // background: $background-base url("../img/cat-energy-catalog-desktop.png") no-repeat 50% 0;
+    // background: $background-base url("../img/cat-energy-form-desktop.jpg") no-repeat 50% 0;
   }
 }

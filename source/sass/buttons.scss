@@ -19,4 +19,11 @@
     background-color: $button-hover;
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &--form {
+    display: block;
+    padding: 11px 86px 11px;
+    margin: 25px auto 10px;
+    border: none;
+  }
 }
