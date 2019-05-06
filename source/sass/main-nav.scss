@@ -150,28 +150,27 @@
     &--menu {
       width: 855px;
     }
-  }
 
-  .main-nav--opened {
-    margin-left: 144px;
-
-    &::after {
-      content: "";
+    &--cat::before {
       position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 696px;
       width: 100%;
-      min-height: 696px;
-      background-color: #5eaa2f;
+      background-color: #65a93c;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
+      background-position: right;
       z-index: 1;
     }
   }
 
-  .main-nav--menu.main-nav--opened {
-    &::after {
-      display: none;
-    }
-  }
+  // .main-nav--menu.main-nav--opened {
+  //   &::after {
+  //     display: none;
+  //   }
+  // }
 
   .main-nav__list {
     &--form {

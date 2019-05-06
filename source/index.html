@@ -15,6 +15,7 @@
         </a>
       </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
+        <div class="main-nav--cat"></div>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -132,10 +133,12 @@
             </div>
           </div>
         </div>
+
         <div class="example__toggle">
           <input class="example__input" type="radio" id="example-input-before" name="example-input-before">
           <input class="example__input" type="radio" id="example-input-after" name="example-input-after">
         </div>
+
         <div class="example__items">
           <div class="example__item example__item--before">
             <picture>
@@ -148,17 +151,19 @@
             <picture>
               <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-              <img class="example__img" src="img/after-mobile@1x.png" width="311" height="232" alt="Вид кота после">
+              <img class="example__img example__img--after" src="img/after-mobile@1x.png" width="311" height="232" alt="Вид кота после">
             </picture>
+          </div>
+
+          <div class="example__control">
+            <label class="example__label example__label--before" for="example-input-before">Было</label>
+            <div class="example__range">
+              <div class="example__scale"></div>
+              <button class="example__button" type="button" aria-label="Фото кота до и после"></button>
+            </div>
+            <label class="example__label example__label--after" for="example-input-after">Стало</label>
+          </div>
         </div>
-      </div>
-      <div class="example__control">
-        <label class="example__label example__label--before" for="example-input-before">Было</label>
-        <div class="example__range">
-          <div class="example__scale"></div>
-          <button class="example__button" type="button" aria-label="Фото кота до и после"></button>
-        </div>
-        <label class="example__label example__label--after" for="example-input-after">Стало</label>
       </section>
 
       <section class="contacts">
@@ -172,15 +177,16 @@
           </p>
         </div>
         <div class="contacts__map-wrapper">
-        <a class="contacts__map" href="https://www.google.com/maps">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-            <img class="contacts-map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная, д. 19/8 Cанкт-Петербург">
-          </picture>
-        </a>
-          <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adbeb9a81a549f52aba4e52672151efb8348464c5abae5c2ec1953457cf58457c&amp;width=100%25&amp;height=440&amp;lang=ru_UA&amp;scroll=false"></script>
-        </div> -->
+          <a class="contacts__map" href="https://www.google.com/maps">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+              <img class="contacts-map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная, д. 19/8 Cанкт-Петербург">
+            </picture>
+          </a>
+          <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adbeb9a81a549f52aba4e52672151efb8348464c5abae5c2ec1953457cf58457c&amp;width=100%25&amp;height=440&amp;lang=ru_UA&amp;scroll=false"></script>-->
+
+        </div>
       </section>
     </main>
 
