@@ -59,7 +59,6 @@
                 </label>
               </div>
 
-
               <div class="form__parametrs form__border form__border--weight">
                 <fieldset class="form__fieldset">
                   <div class="form__parametrs-choice">
@@ -77,74 +76,56 @@
                 </fieldset>
               </div>
 
-
-            <h2 class="form__header form__header--second">Контактные данные (владельца кота)</h2>
-            <div class="form__parametrs">
-              <label class="form__label form__label--parametrs" for="email">
-                <span class="form__label-text form__label-text--margin">E-mail:*</span>
-                <input class="form__label-input form__label-input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-              </label>
-              <label class="form__label" for="phone">
-                <span class="form__label-text form__label-text--margin">Телефон:*</span>
-                <input class="form__label-input form__label-input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
-              </label>
-
-              <label class="form__header form__header--comment" for="comment">Комментарий</label>
-              <div class="form__parametrs form__parametrs--textarea">
-                <textarea class="form__textarea" id="comment" name="comment" cols="20" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </div>
-
-              <fieldset class="form__fieldset">
-                <legend class="form__header form__header--comment form__header--else">
-                  Дополнительно
-                </legend>
+              <h2 class="form__header form__header--second">Контактные данные (владельца кота)</h2>
               <div class="form__parametrs">
-                  <div class="form__parametrs form__parametrs--width">
-                    <input class="visually-hidden form__checkbox" type="checkbox" name="no-sugar" id="no-sugar" checked="">
-                    <label class="form__checkbox-label form__parametrs--flex" for="no-sugar">Сахарозаменитель</label>
+                <label class="form__label form__label--parametrs" for="email">
+                  <span class="form__label-text form__label-text--margin">E-mail:*</span>
+                  <input class="form__label-input form__label-input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+                </label>
+                <label class="form__label" for="phone">
+                  <span class="form__label-text form__label-text--margin">Телефон:*</span>
+                  <input class="form__label-input form__label-input--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+                </label>
+
+                <label class="form__header form__header--comment" for="comment">Комментарий</label>
+                <div class="form__parametrs form__parametrs--textarea">
+                  <textarea class="form__textarea" id="comment" name="comment" cols="20" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </div>
+
+                <fieldset class="form__fieldset">
+                  <legend class="form__header form__header--comment form__header--else">
+                    Дополнительно
+                  </legend>
+                  <div class="form__parametrs">
+                    <div class="form__parametrs form__parametrs--width">
+                      <input class="visually-hidden form__checkbox" type="checkbox" name="no-sugar" id="no-sugar" checked="">
+                      <label class="form__checkbox-label form__parametrs--flex" for="no-sugar">Сахарозаменитель</label>
+                    </div>
+                    <div class="form__parametrs form__parametrs--width">
+                      <input class="visually-hidden form__checkbox" type="checkbox" name="drinks" id="drinks">
+                      <label class="form__checkbox-label form__parametrs--flex" for="drinks">Питьевая вода</label>
+                    </div>
+                    <div class="form__parametrs form__parametrs--width">
+                      <input class="visually-hidden form__checkbox" type="checkbox" name="milk" id="milk">
+                      <label class="form__checkbox-label form__parametrs--flex" for="milk">Молоко</label>
+                    </div>
+                    <div class="form__parametrs form__parametrs--width">
+                      <input class="visually-hidden form__checkbox" type="checkbox" name="vit" id="vit">
+                      <label class="form__checkbox-label form__parametrs--flex" for="vit">Витамины</label>
+                    </div>
                   </div>
-                  <div class="form__parametrs form__parametrs--width">
-                    <input class="visually-hidden form__checkbox" type="checkbox" name="drinks" id="drinks">
-                    <label class="form__checkbox-label form__parametrs--flex" for="drinks">Питьевая вода</label>
-                  </div>
-                  <div class="form__parametrs form__parametrs--width">
-                    <input class="visually-hidden form__checkbox" type="checkbox" name="milk" id="milk">
-                    <label class="form__checkbox-label form__parametrs--flex" for="milk">Молоко</label>
-                  </div>
-                  <div class="form__parametrs form__parametrs--width">
-                    <input class="visually-hidden form__checkbox" type="checkbox" name="vit" id="vit">
-                    <label class="form__checkbox-label form__parametrs--flex" for="vit">Витамины</label>
-                  </div>
+                </fieldset>
+              </div>
+              <div class="form__parametrs form__parametrs--button">
+                <button class="button button--form" type="submit">Отправить заявку</button>
+                <p class="form__main">
+                  * — Обязательные поля
+                </p>
               </div>
             </div>
-            </fieldset>
-            <div class="form__parametrs form__parametrs--button">
-              <button class="button button--form" type="submit">Отправить заявку</button>
-              <p class="form__main">
-                * — Обязательные поля
-              </p>
-            </div>
-            </form>
+          </form>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <section class="contacts contacts--wrapper">
         <h2 class="visually-hidden">Контакты</h2>
@@ -157,15 +138,15 @@
           </p>
         </div>
         <div class="contacts__map-wrapper">
-        <a class="contacts__map" href="https://www.google.com/maps">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-            <img class="contacts-map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная, д. 19/8 Cанкт-Петербург">
-          </picture>
-        </a>
-          <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adbeb9a81a549f52aba4e52672151efb8348464c5abae5c2ec1953457cf58457c&amp;width=100%25&amp;height=440&amp;lang=ru_UA&amp;scroll=false"></script>
-        </div> -->
+          <a class="contacts__map" href="https://www.google.com/maps">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+              <img class="contacts-map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Офис компании по адресу: ул. Большая Конюшенная, д. 19/8 Cанкт-Петербург">
+            </picture>
+          </a>
+          <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adbeb9a81a549f52aba4e52672151efb8348464c5abae5c2ec1953457cf58457c&amp;width=100%25&amp;height=440&amp;lang=ru_UA&amp;scroll=false"></script>-->
+        </div>
       </section>
     </main>
     <footer class="page-footer">
