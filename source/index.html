@@ -15,6 +15,7 @@
         </a>
       </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
+        <div class="main-nav--cat"></div>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -132,10 +133,14 @@
             </div>
           </div>
         </div>
+
+
         <div class="example__toggle">
           <input class="example__input" type="radio" id="example-input-before" name="example-input-before">
           <input class="example__input" type="radio" id="example-input-after" name="example-input-after">
         </div>
+
+
         <div class="example__items">
           <div class="example__item example__item--before">
             <picture>
@@ -148,17 +153,21 @@
             <picture>
               <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-              <img class="example__img" src="img/after-mobile@1x.png" width="311" height="232" alt="Вид кота после">
+              <img class="example__img example__img--after" src="img/after-mobile@1x.png" width="311" height="232" alt="Вид кота после">
             </picture>
+          </div>
+
+          <div class="example__control">
+            <label class="example__label example__label--before" for="example-input-before">Было</label>
+            <div class="example__range">
+              <div class="example__scale"></div>
+              <button class="example__button" type="button" aria-label="Фото кота до и после"></button>
+            </div>
+            <label class="example__label example__label--after" for="example-input-after">Стало</label>
+          </div>
         </div>
-      </div>
-      <div class="example__control">
-        <label class="example__label example__label--before" for="example-input-before">Было</label>
-        <div class="example__range">
-          <div class="example__scale"></div>
-          <button class="example__button" type="button" aria-label="Фото кота до и после"></button>
-        </div>
-        <label class="example__label example__label--after" for="example-input-after">Стало</label>
+
+
       </section>
 
       <section class="contacts">

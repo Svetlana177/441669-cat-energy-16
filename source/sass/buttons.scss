@@ -27,3 +27,24 @@
     border: none;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--form {
+      font-size: 20px;
+      padding: 17px 67px 15px 63px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--form {
+      font-size: 20px;
+      padding: 17px 206px 15px 209px;
+      margin: 0;
+    }
+  }
+}
