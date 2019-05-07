@@ -257,10 +257,6 @@
 .form__fieldset {
   padding: 0;
   border: none;
-
-  // &--choice {
-  //   margin: 26px 0 0;
-  // }
 }
 
 .form__main {
@@ -368,7 +364,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    // padding: 0 67px 0 72px;
     box-sizing: border-box;
   }
 
@@ -573,10 +568,7 @@
 
 @media (min-width: $desktop-width) {
   .form__wrapper {
-    width: 1216px;
-    padding: 0;
-    // display: flex;
-    // flex-wrap: wrap;
+    width: 1220px;
   }
 
   .form__parametrs {
@@ -639,28 +631,15 @@
 
   .form__header--second::before,
   .form__header--comment::before {
-    width: 67px;
+    width: 29px;
     top: 62%;
-    left: -110px;
-  }
-
-  .form__header--second::after,
-  .form__header--comment::after {
-    width: 770px;
-    top: 62%;
-    left: 107%;
+    left: -30px;
   }
 
   .form__header--comment::after {
-    width: 1113px;
+    width: 1000px;
     top: 62%;
     left: 48%;
-  }
-
-  .form__header--else.form__header--comment::after {
-    width: 1080px;
-    top: 62%;
-    left: 55%;
   }
 
   .form__label {

@@ -138,39 +138,19 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    width: 720px;
+    // width: 610px;
     padding-top: 77px;
-    padding-left: 135px;
+    padding-left: 132px;
     z-index: 2;
   }
 
   .main-nav {
-    width: 720px;
+    width: 610px;
 
     &--menu {
-      width: 855px;
-    }
-
-    &--cat::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      height: 696px;
-      width: 100%;
-      background-color: #65a93c;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: right;
-      z-index: 1;
+      width: 969px;
     }
   }
-
-  // .main-nav--menu.main-nav--opened {
-  //   &::after {
-  //     display: none;
-  //   }
-  // }
 
   .main-nav__list {
     &--form {
