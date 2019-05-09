@@ -14,6 +14,7 @@
   display: block;
 
   &--second {
+    width: 200px;
     font-size: 24px;
     line-height: 1;
     text-align: left;
@@ -41,7 +42,7 @@
   width: 99px;
   height: 3px;
   top: 20%;
-  right: -19px;
+  left: 195px;
   background-color: #68b738;
 }
 
@@ -412,7 +413,7 @@
   .form__header--second::after {
     width: 151px;
     top: 62%;
-    right: -178px;
+    left: 545px;
   }
 
   .form__header--second::before {
@@ -429,7 +430,6 @@
     width: 322px;
     font-size: 20px;
     line-height: 1.5;
-    letter-spacing: normal;
     text-align: left;
     padding: 0;
     margin: 0 0 69px 70px;
@@ -636,8 +636,14 @@
     left: -30px;
   }
 
+  .form__header--second::after {
+    width: 700px;
+    top: 62%;
+    left: 109%;
+  }
+
   .form__header--comment::after {
-    width: 1000px;
+    width: 1045px;
     top: 62%;
     left: 48%;
   }

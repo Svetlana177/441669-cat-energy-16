@@ -13,7 +13,6 @@
   font-weight: normal;
   font-style: normal;
   line-height: 1.25;
-  letter-spacing: normal;
   text-align: center;
   background-color: $color-grey;
   color: $main-color;
@@ -47,5 +46,10 @@
       padding: 13px 91px 12px 93px;
       margin: 15px 0;
     }
+  }
+
+  .catalog-button__show {
+    display: inline-block;
+    padding: 18px 45px 16px;
   }
 }

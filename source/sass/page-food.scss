@@ -1,9 +1,17 @@
 .page-food {
+  background: linear-gradient(to bottom, #68b738, #68b738, 306px, #ffffff 169px, #ffffff);
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100%, auto;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: linear-gradient(to bottom, #68b738, #68b738, 306px, #ffffff 169px, #ffffff);
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 100%, auto;
+    background-repeat: no-repeat;
+  }
 }
 
 .page-food__header {
@@ -17,12 +25,13 @@
 }
 
 .page-food__info {
+  width: 200px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 1;
   color: $color-sub;
   text-transform: uppercase;
   padding: 0 0 27px;
-  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,9 +48,10 @@
     line-height: 1;
     color: $second-color;
     text-align: left;
-    margin-left: 89px;
+    margin-left: 70px;
     position: relative;
     padding: 0;
+    width: 285px;
   }
 
   .page-food__header {
@@ -53,23 +63,27 @@
     font-style: normal;
     text-align: left;
     padding: 0;
-    margin: 0 0 40px 87px;
+    margin: 0 0 40px 72px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-food {
     display: flex;
-    width: 720px;
+    flex-wrap: wrap;
+    width: 1061px;
     max-height: 476px;
-    margin: 0 0 114px;
+    margin: 0 auto;
+    margin-bottom: 386px;
   }
 
   .page-food__header {
-    margin: 36px 0 40px 122px;
+    width: 423px;
+    margin: 0 361px 33px 0;
   }
 
   .page-food__info {
-    margin-left: 122px;
+    margin: 0;
+    height: 30px;
   }
 }

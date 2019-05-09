@@ -202,6 +202,8 @@
 
   .program__food {
     position: absolute;
+    width: 280px;
+    box-sizing: border-box;
     top: -76%;
     left: 89px;
     font-size: 20px;
@@ -216,7 +218,7 @@
 
   .program__list {
     display: flex;
-    margin-bottom: 79px;
+    margin: 80px 0 79px;
   }
 
   .program__item {
@@ -280,7 +282,6 @@
   }
 
   .program__food {
-    top: -87%;
-    left: 80px;
+    left: 79px;
   }
 }
