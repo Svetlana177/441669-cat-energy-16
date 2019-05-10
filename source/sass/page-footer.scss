@@ -18,6 +18,9 @@
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
+  width: 165px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,29 +28,31 @@
     display: flex;
     justify-content: space-between;
     width: 707px;
-    padding: 64px 30px 64px 31px;
+    padding: 44px 0 44px 0;
   }
 
   .page-footer__social {
     display: flex;
-    width: 450px;
+    width: 542px;
     justify-content: space-between;
     border-bottom: none;
+    margin-bottom: 0;
   }
-}
 
-.page-footer__logo {
-  width: 128px;
-  height: 24px;
+
+  .page-footer__logo {
+    width: 128px;
+    height: 24px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1220px;
-    padding: 64px 0 0;
+    padding: 44px 0;
   }
 
   .page-footer__social {
-    width: 666px;
+    width: 680px;
   }
 }
