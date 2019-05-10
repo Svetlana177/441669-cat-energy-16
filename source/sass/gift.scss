@@ -1,21 +1,30 @@
 .gift {
   width: 280px;
   margin: 39px auto 0;
+  padding-top: 65px;
+  padding-bottom: 43px;
+  box-sizing: border-box;
   background: #68b738 url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   position: relative;
+  background-size: cover;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 56px;
-    height: 61px;
-    top: 24%;
-    left: 38%;
-    background: #68b738 url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: #68b738 url("../img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
   }
 }
+
+.gift__link {
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 113px;
+}
+
+.gift__link-svg {
+  fill: #ffffff;
+}
+
 
 .gift__title {
   width: 159px;
@@ -24,52 +33,62 @@
   color: #ffffff;
   line-height: 1.25;
   text-align: center;
-  margin: 0 auto;
-  padding-top: 190px;
-  padding-bottom: 35px;
+  margin: 64px auto 0;
+  word-break: normal;
 }
 
 @media (min-width: $tablet-width) {
   .gift {
-    width: 708px;
     background: #68b738 url("../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
-    margin-bottom: 76px;
+    background-size: cover;
+    display: flex;
+    width: 714px;
+    justify-content: space-between;
+    margin: 0 0 76px;
+    padding-bottom: 69px;
 
-    &::before {
-      top: 43%;
-      left: 14%;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #68b738 url("../img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
     }
   }
+
 
   .gift__title {
     width: 159px;
     font-family: "Arial", sans-serif;
     text-align: left;
-    padding-top: 88px;
-    padding-bottom: 52px;
-    padding-left: 59%;
+    margin: 0 125px 0 0;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gift {
     width: 245px;
-    background-image: url("../img/gift-photo-desktop@1x.jpg");
-    margin: 5px 0 0;
-    max-height: 285px;
+    background: #68b738 url("../img/gift-photo-desktop@1x.jpg");
+    background-size: cover;
+    margin: 0;
+    flex-wrap: wrap;
 
-    &::before {
-      width: 56px;
-      height: 61px;
-      top: 24%;
-      left: 38%;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #68b738 url("../img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 
   .gift__title {
     margin: 0;
-    padding: 180px 0 0 51px;
     text-align: center;
+  }
+
+  .gift__link {
+    padding: 0 43px;
+
+    &--present {
+      width: 60px;
+      padding: 0 96px 0 93px;
+    }
   }
 }

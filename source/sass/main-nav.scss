@@ -118,7 +118,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 501px;
+    width: 456px;
     display: flex;
     min-height: auto;
   }
@@ -138,9 +138,6 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    // width: 610px;
-    padding-top: 77px;
-    padding-left: 132px;
     z-index: 2;
   }
 
@@ -158,3 +155,163 @@
     }
   }
 }
+
+
+/*Напишите нам*/
+//
+// .modal {
+//   position: fixed;
+//   z-index: 30;
+//   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+// }
+//
+// .modal-write-us {
+//   top: 96px;
+//   left: 50%;
+//   display: none;
+//   width: 960px;
+//   padding: 60px 100px;
+//   background-color: #ffffff;
+//   margin-left: -480px;
+//   box-sizing: border-box;
+// }
+//
+// .modal-close {
+//   position: absolute;
+//   top: 26px;
+//   right: 30px;
+//   width: 55px;
+//   height: 55px;
+//   font-size: 0;
+//   background-color: #f0c52e;
+//   opacity: 0.5;
+//   border: 0;
+//   cursor: pointer;
+//   z-index: 3;
+// }
+//
+// .modal-close::before,
+// .modal-close::after {
+//   content: "";
+//
+//   width: 37px;
+//   height: 3px;
+//   top: 24px;
+//   left: 10px;
+//
+//   position: absolute;
+//   background-color: #ffffff;
+// }
+//
+// .modal-close::before {
+//   transform: rotate(45deg);
+// }
+//
+// .modal-close::after {
+//   transform: rotate(-45deg);
+// }
+//
+// .name-email {
+//   display: flex;
+//   margin-bottom: 40px;
+// }
+//
+// .modal-name {
+//   margin: 0;
+//   line-height: 24px;
+// }
+//
+// .write-us-form-1 input[type="text"],
+// .write-us-form-1 input[type="email"],
+// .write-us-text {
+//   width: 360px;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 18px;
+//   color: #000000;
+//   background-color: #f2f2f2;
+//   opacity: 0.4;
+//   box-sizing: border-box;
+//   padding: 18px 20px;
+//   margin-right: 40px;
+//   border: none;
+// }
+//
+// .write-us-form-1 input[type="email"] {
+//   margin-right: 0;
+// }
+//
+// .write-us-text {
+//   width: 760px;
+//   resize: none;
+//   padding-bottom: 50px;
+// }
+//
+// .write-us-form-1 input[type="text"]:hover,
+// .write-us-form-1 input[type="email"]:hover,
+// .write-us-text:hover {
+//   background-color: #eaeaea;
+// }
+//
+// .write-us-form-1 input[type="text"]:focus,
+// .write-us-form-1 input[type="email"]:focus,
+// .write-us-text:focus {
+//   background-color: #ffffff;
+//   outline: 3px solid #f7e296;
+//   opacity: 1;
+// }
+//
+// .write-us-form-1 input[type="text"]:invalid,
+// .write-us-form-1 input[type="email"]:invalid,
+// .write-us-text:invalid {
+//   opacity: 0.5;
+//   background-color: #f6dada;
+//   outline: 1px solid #f6dada;
+// }
+//
+// .write-us-send-footer {
+//   position: relative;
+//   width: 200px;
+//   height: 40px;
+//
+//   line-height: 24px;
+//   letter-spacing: 0.2em;
+//   text-transform: uppercase;
+//   font-weight: 800;
+//
+//   margin-top: 41px;
+//   padding: 8px 43px;
+//   color: #000000;
+//   background-color: #ffffff;
+//   border: none;
+// }
+//
+// .write-us-send-footer::before {
+//   content: "Отправить";
+//
+//   position: absolute;
+//   top: 5px;
+//   left: 24px;
+//   z-index: 15;
+//   color: #000000;
+// }
+//
+// .write-us-send-footer::after {
+//   content: "";
+//
+//   position: absolute;
+//   width: 200px;
+//   height: 8px;
+//   background-color: #f0c52e;
+//   top: 14px;
+//   left: -2px;
+// }
+//
+// .write-us-send-footer:active::before {
+//   color: rgba(0, 0, 0, 0.3);
+// }
+//
+// .write-us-send-footer:hover::after {
+//   height: 41px;
+//   top: -3px;
+// }

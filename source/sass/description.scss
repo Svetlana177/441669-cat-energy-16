@@ -22,7 +22,6 @@
   font-family: $font-arial;
   font-size: 14px;
   line-height: 1.29;
-  letter-spacing: normal;
   text-align: left;
   color: $main-color;
   padding: 0;
@@ -56,18 +55,34 @@
 
   &--advantage::before {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
   }
 
   &--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
   }
 
   &--replacement::before {
     background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
   }
 
   &--enjoy::before {
     background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
   }
 }
 
@@ -88,7 +103,6 @@
   .description__title {
     font-size: 60px;
     line-height: 1;
-    letter-spacing: normal;
     margin-bottom: 72px;
     padding: 0;
   }

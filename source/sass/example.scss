@@ -74,7 +74,7 @@
 }
 
 .example__description-text {
-  width: 57px;
+  width: 51px;
   font-size: 12px;
   line-height: 1;
   text-align: center;
@@ -97,6 +97,7 @@
 }
 
 .example__label {
+  width: 41px;
   font-size: 16px;
   line-height: 1.25;
   color: $second-color;
@@ -177,7 +178,7 @@
     width: 100%;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2, 373px, #eaeaea 169px, #eaeaea);
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2, 50%, #eaeaea 169px, #eaeaea);
     background-size: cover;
   }
 
@@ -191,14 +192,15 @@
   .example__title {
     font-size: 60px;
     line-height: 1;
-    padding-left: 0;
+    padding-left: 35px;
     width: 768px;
     margin: 0 auto 29px;
+    box-sizing: border-box;
   }
 
   .example__description {
     &--wrapper {
-      padding: 0 90px 0 0;
+      padding: 0 0 0 35px;
       width: 768px;
       margin: 0 auto 86px;
       box-sizing: border-box;
@@ -209,7 +211,7 @@
     font-size: 16px;
     line-height: 1.5;
     width: 768px;
-    padding: 0 90px 0 0;
+    padding: 0 90px 0 35px;
     box-sizing: border-box;
     margin: 0 auto;
   }
@@ -233,7 +235,7 @@
 
   .example__description-main {
     width: 162px;
-    margin-right: 97px;
+    margin-right: 60px;
 
     &--weight {
       margin-right: 42px;
@@ -267,8 +269,8 @@
       top: 0;
       bottom: 0;
       z-index: 3;
-      width: 50%;
-      left: -1%;
+      width: 44%;
+      left: 5%;
       overflow: hidden;
     }
 
@@ -294,6 +296,7 @@
   .example__label {
     font-size: 20px;
     line-height: 1;
+    width: 55px;
     border-bottom: 1px dotted #bfbfbf;
   }
 
@@ -351,7 +354,7 @@
     width: 100%;
     padding: 0 40px;
     box-sizing: border-box;
-    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2, 943px, #eaeaea 169px, #eaeaea);
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2, 75%, #eaeaea 169px, #eaeaea);
   }
 
   .example__wrapper {
@@ -361,7 +364,7 @@
 
   .example__item {
     &--before {
-      left: 2%;
+      left: 7%;
     }
   }
 
