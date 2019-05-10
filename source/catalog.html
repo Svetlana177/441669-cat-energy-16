@@ -10,7 +10,7 @@
     <body class="page">
       <header class="page-header">
         <div class="page-header__wrapper">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -45,7 +45,7 @@
           </div>
           <div class="catalog__wrapper">
             <ul class="catalog__list">
-              <li class="catalog__item">
+              <li class="catalog__item ">
                 <a class="catalog__block-link" href="catalog/pro_500.html">
                   <picture>
                     <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
@@ -364,7 +364,7 @@
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <div class="page-footer__social social">
-            <a href="#" class="logo-link">
+            <a href="index.html" class="logo-link">
                 <svg class="page-footer__logo" width="128" height="24" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.8 23.4" style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve">
                 <g>
                   <path
@@ -458,23 +458,11 @@
           </div>
         </div>
       </footer>
-
-      <script>
-        var navMain = document.querySelector('.main-nav');
-        var navToggle = document.querySelector('.main-nav__toggle');
-
-        navMain.classList.remove('main-nav--nojs');
-
-        navToggle.addEventListener('click', function() {
-          if (navMain.classList.contains('main-nav--closed')) {
-            navMain.classList.remove('main-nav--closed');
-            navMain.classList.add('main-nav--opened');
-          } else {
-            navMain.classList.add('main-nav--closed');
-            navMain.classList.remove('main-nav--opened');
-          }
-        });
-      </script>
-
+      <section class="modal modal__catalog">
+        <h2>Модальное окно для оформления заказа</h2>
+          <button class="modal-close" type="button">Закрыть</button>
+      </section>
+      <script src="js/script.js"></script>
+      <script src="js/modal.js"></script>
     </body>
   </html>

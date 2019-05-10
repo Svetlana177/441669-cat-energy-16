@@ -1,0 +1,55 @@
+.modal {
+  position: fixed;
+  z-index: 30;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal__catalog {
+  top: 96px;
+  left: 50%;
+  display: none;
+  width: 960px;
+  padding: 60px 100px;
+  background-color: #ffffff;
+  margin-left: -480px;
+  box-sizing: border-box;
+}
+
+.modal-close {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  background-color: $background-leaf;
+  border: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  width: 37px;
+  height: 3px;
+  top: 24px;
+  left: 10px;
+
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
