@@ -12,6 +12,7 @@
   text-transform: none;
   margin: 13px 20px 25px;
   display: block;
+  position: relative;
 
   &--second {
     width: 200px;
@@ -20,7 +21,6 @@
     text-align: left;
     font-weight: normal;
     margin: 18px 20px 26px;
-    position: relative;
     text-transform: none;
   }
 
@@ -28,11 +28,6 @@
     font-size: 24px;
     line-height: 1;
     margin: 15px 0 31px;
-    position: relative;
-  }
-
-  &--else {
-    position: relative;
   }
 }
 
@@ -51,8 +46,8 @@
   position: absolute;
   width: 158px;
   height: 3px;
-  top: 43%;
-  left: 140px;
+  top: 13px;
+  left: 134px;
   background-color: #68b738;
 }
 
@@ -62,7 +57,7 @@
   width: 136px;
   height: 3px;
   top: 43%;
-  left: 162px;
+  left: 159px;
   background-color: #68b738;
 }
 
@@ -82,6 +77,7 @@
   flex-wrap: wrap;
   margin: 0 auto 34px;
   box-sizing: border-box;
+  position: relative;
 
   &--second {
     padding: 29px 0 26px 20px;
@@ -138,25 +134,53 @@
   }
 
   &--email {
-    width: 219px;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 92%;
-    background-size: 18px 14px;
+    position: relative;
   }
 
   &--phone {
     width: 204px;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 92%;
-    background-size: 21px 21px;
+    position: relative;
   }
 }
 
-.form__label-input--email:invalid,
-.form__label-input--phone:invalid {
+.form__label-icon {
+  &--mail {
+    position: absolute;
+    right: 6px;
+    top: 15px;
+  }
+
+  &--phone {
+    position: absolute;
+    right: 6px;
+    top: 81px;
+  }
+}
+
+
+.form__label-input:focus:invalid + .form__label-icon {
+  fill: #ff8282;
+}
+
+.form__label-input:active + .form__label-icon,
+.form__label-input:focus + .form__label-icon {
+  fill: #68b738;
+}
+
+.form__label-input:invalid:not(:placeholder-shown) {
   outline: 2px solid #ff8282;
+}
+
+// .form__label-input:valid:not(:placeholder-shown) {
+//   outline: 2px solid blue;
+// }
+
+// .form-field__control:active ~ svg, .form-field__control:focus ~ svg {
+//     fill: #68b738;
+// }
+
+.form__label-input:hover {
+  outline: 1px solid #cdcdcd;
 }
 
 .form__label-input:focus,
@@ -164,81 +188,81 @@
   outline: 2px solid #444444;
 }
 
-.form__input:checked + .form__radio::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  top: 65%;
-  left: 16px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background-color: #68b738;
-  cursor: pointer;
-}
+// .form__input:checked + .form__radio::after {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   width: 12px;
+//   height: 12px;
+//   top: 65%;
+//   left: 16px;
+//   transform: translate(-50%, -50%);
+//   border-radius: 50%;
+//   background-color: #68b738;
+//   cursor: pointer;
+// }
+//
+// .form__input + .form__radio::after {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   width: 12px;
+//   height: 12px;
+//   top: 65%;
+//   left: 16px;
+//   transform: translate(-50%, -50%);
+//   border-radius: 50%;
+//   background-color: #ffffff;
+//   cursor: pointer;
+// }
 
-.form__input + .form__radio::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 12px;
-  height: 12px;
-  top: 65%;
-  left: 16px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-
-.form__radio {
-  margin: 26px 0 27px 0;
-  padding-left: 54px;
-  position: relative;
-  display: block;
-
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    border: 1px solid #cdcdcd;
-    border-radius: 50%;
-    background-color: #ffffff;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    top: -4px;
-    left: 0%;
-  }
-
-  &--first {
-    margin-right: 205px;
-  }
-
-  &--second {
-    margin-right: 90px;
-  }
-}
-
-.form__radio:hover::before,
-.form__radio:focus::before {
-  border: 1px solid #bababa;
-}
-
-.form__radio:active {
-  opacity: 0.3;
-}
-
+// .form__radio {
+//   margin: 26px 0 27px 0;
+//   padding-left: 54px;
+//   position: relative;
+//   display: block;
+//
+//
+//   &::before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     border: 1px solid #cdcdcd;
+//     border-radius: 50%;
+//     background-color: #ffffff;
+//     cursor: pointer;
+//     width: 30px;
+//     height: 30px;
+//     top: -4px;
+//     left: 0%;
+//   }
+//
+//   &--first {
+//     margin-right: 205px;
+//   }
+//
+//   &--second {
+//     margin-right: 90px;
+//   }
+// }
+//
+// .form__radio:hover::before,
+// .form__radio:focus::before {
+//   border: 1px solid #bababa;
+// }
+//
+// .form__radio:active {
+//   opacity: 0.3;
+// }
+//
 .form__parametrs--second input[type="checkbox"]:checked + label::before,
 .form__parametrs--second input[type="radio"]:checked + label::before {
   display: block;
 }
-
-.form__radio:hover::after {
-  border: 1px solid #bfbfbf;
-}
+//
+// .form__radio:hover::after {
+//   border: 1px solid #bfbfbf;
+// }
 
 /*textarea*/
 .form__textarea {
@@ -247,6 +271,7 @@
   padding: 16px;
   text-transform: uppercase;
   box-sizing: border-box;
+  resize: none;
 }
 
 .form__textarea:focus,
@@ -351,8 +376,10 @@
   height: 17px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  // background-position: center;
   cursor: pointer;
+  left: 10px;
+  top: 9px;
 }
 
 .form__textarea:invalid {
@@ -366,6 +393,20 @@
     flex-wrap: wrap;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+
+  .form__label-icon {
+    &--mail {
+      position: absolute;
+      right: 17px;
+      top: 15px;
+    }
+
+    &--phone {
+      position: absolute;
+      right: 12px;
+      top: 81px;
+    }
   }
 
   .form__header {
@@ -556,6 +597,7 @@
     width: 100%;
     font-size: 20px;
     line-height: 1.5;
+    outline: 1px solid #cdcdcd;
   }
 
   .form__main {
@@ -598,7 +640,7 @@
       margin-bottom: 50px;
     }
 
-    .form__parametrs--flex {
+    &--flex {
       margin: 0;
     }
   }
@@ -687,5 +729,19 @@
 
   .form__main {
     margin: 0 0 0 81px;
+  }
+
+  .form__label-icon {
+    &--mail {
+      position: absolute;
+      left: 526px;
+      top: 19px;
+    }
+
+    &--phone {
+      position: absolute;
+      right: 25px;
+      top: 19px;
+    }
   }
 }

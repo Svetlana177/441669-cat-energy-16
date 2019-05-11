@@ -1,17 +1,23 @@
 .modal {
   position: fixed;
-  z-index: 30;
+  z-index: 10;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  font-family: $font-oswald;
+}
+
+.modal-title {
+  width: 280px;
+  margin: 40px auto 0;
+  font-size: 15px;
 }
 
 .modal__catalog {
   top: 96px;
-  left: 50%;
+  left: 0;
   display: none;
-  width: 960px;
-  padding: 60px 100px;
+  width: 320px;
+  padding: 60px 20px;
   background-color: #ffffff;
-  margin-left: -480px;
   box-sizing: border-box;
 }
 
@@ -52,4 +58,16 @@
 .modal-show {
   display: block;
   animation: bounce 0.6s;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__catalog {
+    left: 40px;
+    width: 665px;
+  }
+
+  .modal-title {
+    width: 320px;
+    font-size: 18px;
+  }
 }
