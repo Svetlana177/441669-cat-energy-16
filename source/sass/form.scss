@@ -144,6 +144,8 @@
 }
 
 .form__label-icon {
+  fill: #222222;
+
   &--mail {
     position: absolute;
     right: 6px;
@@ -157,27 +159,31 @@
   }
 }
 
-
 .form__label-input:focus:invalid + .form__label-icon {
+  fill: #68b738;
+}
+
+.form__label-input:focus:invalid:not(:placeholder-shown) + .form__label-icon {
   fill: #ff8282;
 }
 
-.form__label-input:active + .form__label-icon,
-.form__label-input:focus + .form__label-icon {
-  fill: #68b738;
-}
+// .form__label-input:active ~ .form__label-icon,
+// .form__label-input:focus ~ .form__label-icon {
+//   fill: #68b738;
+// }
 
 .form__label-input:invalid:not(:placeholder-shown) {
   outline: 2px solid #ff8282;
 }
 
-// .form__label-input:valid:not(:placeholder-shown) {
-//   outline: 2px solid blue;
+// .form__label-input:invalid:not(:placeholder-shown) ~ svg {
+//   fill: #ff8282;
 // }
 
-// .form-field__control:active ~ svg, .form-field__control:focus ~ svg {
-//     fill: #68b738;
+// .form__label-input:active + svg {
+//   fill: #68b738;
 // }
+
 
 .form__label-input:hover {
   outline: 1px solid #cdcdcd;
