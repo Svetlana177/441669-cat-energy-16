@@ -6,9 +6,10 @@
   text-align: left;
   text-decoration: none;
   color: $main-color;
-  width: 170px;
+  width: 280px;
   align-items: center;
   display: flex;
+  justify-content: space-between;
 
   &:active {
     opacity: 0.3;
@@ -20,7 +21,7 @@
 }
 
 .copyright__logo-image {
-  width: 27px;
+  width: 36px;
   height: 34px;
 
   &:hover {
@@ -34,4 +35,11 @@
 
 .copyright__develop-html:hover + .copyright__logo-image {
   fill: #68b738;
+}
+
+
+@media (min-width: $tablet-width) {
+  .copyright__develop {
+    width: 170px;
+  }
 }

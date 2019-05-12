@@ -1,16 +1,15 @@
 .page-food {
-  background: linear-gradient(to bottom, #68b738, #68b738, 306px, #ffffff 169px, #ffffff);
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%, auto;
   text-align: center;
-  box-sizing: border-box;
+  background-color: $background-leaf;
+  background-image: linear-gradient(to top, #ffffff 175px, transparent 175px), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center bottom 132px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: linear-gradient(to bottom, #68b738, #68b738, 306px, #ffffff 169px, #ffffff);
-    background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: 100%, auto;
+    background-image: linear-gradient(to top, #ffffff 175px, transparent 175px), url("../img/index-background-mobile@2x.jpg");
     background-repeat: no-repeat;
+    background-position: center bottom, center bottom 132px;
+    background-size: auto, 320px auto;
   }
 }
 
@@ -74,12 +73,12 @@
     width: 1061px;
     max-height: 476px;
     margin: 0 auto;
-    margin-bottom: 372px;
+    margin-bottom: 363px;
   }
 
   .page-food__header {
     width: 423px;
-    margin: 0 361px 33px 0;
+    margin: 0 361px 36px 0;
   }
 
   .page-food__info {

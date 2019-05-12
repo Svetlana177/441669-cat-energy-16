@@ -24,9 +24,8 @@
 }
 
 .program__title {
-  margin: 0;
-  padding: 0;
-  padding-left: 29px;
+  margin: 0 0 0 19px;
+  padding: 0 0 0 29px;
   font-size: 24px;
   line-height: 1.54;
   text-transform: uppercase;
@@ -34,6 +33,7 @@
   font-weight: 500;
   text-align: center;
   word-break: break-all;
+  width: 150px;
 
   &--weight {
     padding-left: 51px;
@@ -77,8 +77,8 @@
   &--loss {
     width: 35px;
     height: 49px;
-    top: 14px;
-    left: 32px;
+    top: 22px;
+    left: 30px;
   }
 
   &--set {
@@ -109,7 +109,6 @@
     left: 126px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
-    // background-size: 34px 12px;
     background-position: right center;
     transition: all 0.3s ease;
   }
@@ -145,8 +144,8 @@
 }
 
 .program__wrapper {
-  margin-top: 21px;
-  margin-bottom: 44px;
+  margin-top: 31px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -161,19 +160,28 @@
     line-height: 1.5;
     padding-bottom: 37px;
     margin: 24px 0 0 0;
+    width: 384px;
+  }
+
+  .program__wrapper {
+    margin-bottom: 46px;
+    margin-top: 20px;
   }
 
   .program__item {
     background-color: $color-grey;
-    // background-color: rgba(173, 255, 47, 0.5);
-    padding: 78px 271px 60px 53px;
+    padding: 75px 0 60px 48px;
 
     &::after {
       width: 200px;
       height: 200px;
       margin-right: 0;
-      left: 451px;
-      top: 93px;
+      left: 445px;
+      top: 90px;
+    }
+
+    &--loss {
+      margin-bottom: 32px;
     }
   }
 
@@ -184,23 +192,25 @@
     &--loss {
       width: 140px;
       height: 194px;
-      top: 75px;
-      left: 479px;
+      top: 77px;
+      left: 476px;
     }
 
     &--set {
-      top: 122px;
-      left: 408px;
+      top: 133px;
+      left: 412px;
       width: 268px;
       height: 113px;
     }
   }
 
   .program__title {
+    width: 230px;
     font-size: 36px;
     line-height: 1.03;
     text-align: left;
     padding: 0;
+    margin: 0;
   }
 
   .program__link {
@@ -208,8 +218,8 @@
     line-height: 1.03;
 
     &::after {
-      bottom: 67px;
-      left: 183px;
+      bottom: 64px;
+      left: 181px;
     }
   }
 
@@ -277,6 +287,7 @@
     text-align: center;
     padding-bottom: 45px;
     padding-left: 38px;
+    margin-left: 79px;
 
     &--weight {
       padding-left: 78px;
@@ -284,6 +295,7 @@
   }
 
   .program__description {
+    width: 480px;
     padding: 0 0 12px;
   }
 
@@ -298,6 +310,7 @@
   }
 
   .program__food {
+    top: -81%;
     left: 79px;
   }
 }

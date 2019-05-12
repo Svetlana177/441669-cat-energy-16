@@ -74,6 +74,7 @@
   margin: 0 auto 14px;
   display: flex;
   justify-content: space-between;
+  font-family: $font-arial;
 }
 
 .catalog__item-else {
@@ -151,7 +152,7 @@
   color: $second-color;
   text-transform: uppercase;
   width: 77px;
-  margin: 25px 0 18px 0;
+  margin: 25px 150px 18px 0;
 }
 
 .catalog__table {
@@ -228,7 +229,6 @@
     border-bottom: none;
     margin: 0 57px 154px 0;
     background: $color-grey;
-    // background: lemonchiffon;
 
     &--plus {
       width: 31px;
@@ -310,7 +310,7 @@
     line-height: 1;
     width: 137px;
     text-align: center;
-    margin: 0 auto 28px;
+    margin: 130px auto 28px;
   }
 
   .catalog__food {
@@ -365,10 +365,6 @@
     margin-top: -89px;
   }
 
-  // .catalog__item-wrapper {
-  //   padding-top: 55px;
-  // }
-
   .catalog__show {
     padding-top: 42px;
   }
@@ -408,7 +404,7 @@
 
 
   .catalog__product {
-    margin: 0 auto;
+    margin: 150px auto 0;
   }
 
   .catalog__table {
@@ -429,8 +425,6 @@
     padding: 0;
     padding-bottom: 33px;
     margin: 0 80px 129px 0;
-
-    // background-color: rgba(173, 255, 47, 0.2);
 
     &--wrapper {
       background: none;

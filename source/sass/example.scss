@@ -10,6 +10,11 @@
 }
 
 .example__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.example__info {
   min-width: 300px;
   margin: 0 auto;
 }
@@ -21,8 +26,7 @@
   line-height: 1.67;
   color: #111111;
   font-weight: 500;
-  padding-left: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .example__description {
@@ -31,7 +35,7 @@
   &--wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 86px;
+    margin-bottom: 13px;
   }
 }
 
@@ -63,13 +67,14 @@
   text-transform: uppercase;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  margin: 0 0 29px 0;
 
   &--weight {
     padding: 18px 41px;
   }
 
   &--days {
-    padding: 18px 20px;
+    padding: 18px 15px;
   }
 }
 
@@ -139,7 +144,7 @@
 }
 
 .example__items {
-  margin: 0 auto 39px;
+  margin: 0 auto 0;
 }
 
 .example__input {
@@ -155,8 +160,12 @@
   overflow: hidden;
 }
 
-.example__item--after {
-  display: none;
+.example__item {
+  margin-bottom: 37px;
+
+  &--after {
+    display: none;
+  }
 }
 
 .example__control {
@@ -169,8 +178,9 @@
 .example__img {
   position: relative;
   display: block;
-  width: 320px;
+  max-width: 104%;
   height: 240px;
+  left: 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -182,11 +192,12 @@
     background-size: cover;
   }
 
-  .example__wrapper {
+  .example__info {
     background: #ffffff;
     box-sizing: border-box;
     width: 100%;
     background-size: cover;
+    padding-top: 41px;
   }
 
   .example__title {
@@ -194,7 +205,7 @@
     line-height: 1;
     padding-left: 35px;
     width: 768px;
-    margin: 0 auto 29px;
+    margin: 0 auto 63px;
     box-sizing: border-box;
   }
 
@@ -202,7 +213,7 @@
     &--wrapper {
       padding: 0 0 0 35px;
       width: 768px;
-      margin: 0 auto 86px;
+      margin: 0 auto 67px;
       box-sizing: border-box;
     }
   }
@@ -211,9 +222,9 @@
     font-size: 16px;
     line-height: 1.5;
     width: 768px;
-    padding: 0 90px 0 35px;
+    padding: 0 66px 0 31px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0 auto 56px;
   }
 
   .example__description-text {
@@ -235,7 +246,7 @@
 
   .example__description-main {
     width: 162px;
-    margin-right: 60px;
+    margin-right: 77px;
 
     &--weight {
       margin-right: 42px;
@@ -247,7 +258,6 @@
     line-height: 1;
     width: 192px;
     text-align: right;
-    margin-top: 41px;
   }
 
   .example__toggle {
@@ -264,13 +274,15 @@
   }
 
   .example__item {
+    margin-bottom: 0;
+
     &--before {
       position: relative;
       top: 0;
       bottom: 0;
       z-index: 3;
       width: 44%;
-      left: 5%;
+      left: 7%;
       overflow: hidden;
     }
 
@@ -289,7 +301,7 @@
     &--after {
       position: absolute;
       clip: rect(auto, auto, auto, 332px);
-      left: 5%;
+      left: 7%;
     }
   }
 
@@ -303,7 +315,7 @@
   .example__control {
     width: 707px;
     margin: 0 auto;
-    padding-top: 39px;
+    padding-top: 14px;
     padding-bottom: 75px;
   }
 
@@ -345,6 +357,10 @@
     border-radius: 50%;
     background-color: $background-leaf;
   }
+
+  .example__wrapper {
+    width: 100%;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -354,12 +370,19 @@
     width: 100%;
     padding: 0 40px;
     box-sizing: border-box;
-    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2, 75%, #eaeaea 169px, #eaeaea);
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2, 73%, #eaeaea 169px, #eaeaea);
   }
 
   .example__wrapper {
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .example__info {
     width: 460px;
     background: #f2f2f2;
+    margin: 0 78px 0 0;
   }
 
   .example__item {
@@ -370,8 +393,8 @@
   }
 
   .example__text {
-    width: 550px;
-    padding: 36px 0 33px 111px;
+    width: 430px;
+    padding: 30px 0 33px 0;
     box-sizing: border-box;
   }
 
@@ -394,15 +417,14 @@
   .example__description--wrapper {
     width: 430px;
     padding: 0;
-    margin: 0 0 0 113px;
   }
 
   .example__title {
     margin-bottom: 109px;
     background: #ffffff;
     padding-bottom: 0;
-    padding-left: 110px;
-    margin-top: -111px;
+    padding-left: 0;
+    margin-top: -133px;
   }
 
   .example__description-text {
@@ -421,6 +443,9 @@
     width: 722px;
     flex-wrap: wrap;
     top: -155px;
-    right: -76px;
+  }
+
+  .example__img--after {
+    left: 5%;
   }
 }

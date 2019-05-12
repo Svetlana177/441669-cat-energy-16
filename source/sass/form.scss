@@ -167,23 +167,9 @@
   fill: #ff8282;
 }
 
-// .form__label-input:active ~ .form__label-icon,
-// .form__label-input:focus ~ .form__label-icon {
-//   fill: #68b738;
-// }
-
 .form__label-input:invalid:not(:placeholder-shown) {
   outline: 2px solid #ff8282;
 }
-
-// .form__label-input:invalid:not(:placeholder-shown) ~ svg {
-//   fill: #ff8282;
-// }
-
-// .form__label-input:active + svg {
-//   fill: #68b738;
-// }
-
 
 .form__label-input:hover {
   outline: 1px solid #cdcdcd;
@@ -194,81 +180,10 @@
   outline: 2px solid #444444;
 }
 
-// .form__input:checked + .form__radio::after {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   width: 12px;
-//   height: 12px;
-//   top: 65%;
-//   left: 16px;
-//   transform: translate(-50%, -50%);
-//   border-radius: 50%;
-//   background-color: #68b738;
-//   cursor: pointer;
-// }
-//
-// .form__input + .form__radio::after {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   width: 12px;
-//   height: 12px;
-//   top: 65%;
-//   left: 16px;
-//   transform: translate(-50%, -50%);
-//   border-radius: 50%;
-//   background-color: #ffffff;
-//   cursor: pointer;
-// }
-
-// .form__radio {
-//   margin: 26px 0 27px 0;
-//   padding-left: 54px;
-//   position: relative;
-//   display: block;
-//
-//
-//   &::before {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     border: 1px solid #cdcdcd;
-//     border-radius: 50%;
-//     background-color: #ffffff;
-//     cursor: pointer;
-//     width: 30px;
-//     height: 30px;
-//     top: -4px;
-//     left: 0%;
-//   }
-//
-//   &--first {
-//     margin-right: 205px;
-//   }
-//
-//   &--second {
-//     margin-right: 90px;
-//   }
-// }
-//
-// .form__radio:hover::before,
-// .form__radio:focus::before {
-//   border: 1px solid #bababa;
-// }
-//
-// .form__radio:active {
-//   opacity: 0.3;
-// }
-//
 .form__parametrs--second input[type="checkbox"]:checked + label::before,
 .form__parametrs--second input[type="radio"]:checked + label::before {
   display: block;
 }
-//
-// .form__radio:hover::after {
-//   border: 1px solid #bfbfbf;
-// }
 
 /*textarea*/
 .form__textarea {
