@@ -14,6 +14,7 @@
   left: 0;
   z-index: 4;
   padding: 13px 72px 11px;
+  word-break: break-all;
 }
 
 .program__list {
@@ -23,9 +24,8 @@
 }
 
 .program__title {
-  margin: 0;
-  padding: 0;
-  padding-left: 29px;
+  margin: 0 0 0 19px;
+  padding: 0 0 0 29px;
   font-size: 24px;
   line-height: 1.54;
   text-transform: uppercase;
@@ -33,6 +33,7 @@
   font-weight: 500;
   text-align: center;
   word-break: break-all;
+  width: 150px;
 
   &--weight {
     padding-left: 51px;
@@ -67,21 +68,24 @@
   &--loss {
     margin-bottom: 20px;
   }
+}
 
-  &--loss::before {
-    top: 23px;
-    left: 30px;
+.program__svg {
+  position: absolute;
+  z-index: 2;
+
+  &--loss {
     width: 35px;
     height: 49px;
-    background-image: url("../img/icon-cat-slim.svg");
+    top: 22px;
+    left: 30px;
   }
 
-  &--set::before {
+  &--set {
     top: 35px;
     left: 12px;
     width: 67px;
     height: 28px;
-    background-image: url("../img/icon-cat-pro.svg");
   }
 }
 
@@ -95,22 +99,34 @@
   color: $second-color;
   padding-top: 20px;
   display: block;
+  cursor: pointer;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 25px;
-    left: 117px;
-    width: 24px;
-    height: 9px;
-    background: url("../img/icon-right-arrow-verylong.svg");
+    width: 25px;
+    height: 12px;
+    left: 126px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    transition: all 0.3s ease;
   }
-
-  cursor: pointer;
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.program__link:active::after {
+  right: 0;
+  width: 34px;
+  opacity: 0.3;
+}
+
+.program__link:hover::after {
+  right: 0;
+  width: 34px;
 }
 
 .program__description {
@@ -128,8 +144,8 @@
 }
 
 .program__wrapper {
-  margin-top: 21px;
-  margin-bottom: 44px;
+  margin-top: 31px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -144,50 +160,57 @@
     line-height: 1.5;
     padding-bottom: 37px;
     margin: 24px 0 0 0;
+    width: 384px;
+  }
+
+  .program__wrapper {
+    margin-bottom: 46px;
+    margin-top: 20px;
   }
 
   .program__item {
     background-color: $color-grey;
-    // background-color: rgba(173, 255, 47, 0.5);
-    padding: 78px 271px 60px 53px;
+    padding: 75px 0 60px 48px;
 
     &::after {
       width: 200px;
       height: 200px;
       margin-right: 0;
-      left: 444px;
-      top: 93px;
+      left: 445px;
+      top: 90px;
     }
 
     &--loss {
-      padding-bottom: 62px;
-      margin-bottom: 29px;
+      margin-bottom: 32px;
+    }
+  }
 
-      &::before {
-        top: 81px;
-        width: 140px;
-        height: 194px;
-        left: 475px;
-      }
+  .program__svg {
+    position: absolute;
+    z-index: 2;
+
+    &--loss {
+      width: 140px;
+      height: 194px;
+      top: 77px;
+      left: 476px;
     }
 
     &--set {
-      padding-right: 311px;
-
-      &::before {
-        top: 133px;
-        left: 413px;
-        width: 268px;
-        height: 112px;
-      }
+      top: 133px;
+      left: 412px;
+      width: 268px;
+      height: 113px;
     }
   }
 
   .program__title {
+    width: 230px;
     font-size: 36px;
     line-height: 1.03;
     text-align: left;
     padding: 0;
+    margin: 0;
   }
 
   .program__link {
@@ -195,8 +218,8 @@
     line-height: 1.03;
 
     &::after {
-      bottom: 67px;
-      left: 183px;
+      bottom: 64px;
+      left: 181px;
     }
   }
 
@@ -227,6 +250,11 @@
     padding: 80px 56px 60px 52px;
     text-align: center;
 
+    &--loss {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
+
     &::after {
       width: 100px;
       height: 100px;
@@ -234,26 +262,24 @@
       left: 57px;
       top: 47px;
     }
+  }
+
+  .program__svg {
+    position: absolute;
+    z-index: 2;
 
     &--loss {
-      margin-right: 80px;
-      margin-bottom: 0;
-
-      &::before {
-        width: 68px;
-        height: 94px;
-        top: 42px;
-        left: 72px;
-      }
+      width: 71px;
+      height: 97px;
+      top: 37px;
+      left: 71px;
     }
 
     &--set {
-      &::before {
-        width: 134px;
-        height: 56px;
-        top: 69px;
-        left: 40px;
-      }
+      top: 70px;
+      left: 38px;
+      width: 134px;
+      height: 57px;
     }
   }
 
@@ -261,6 +287,7 @@
     text-align: center;
     padding-bottom: 45px;
     padding-left: 38px;
+    margin-left: 79px;
 
     &--weight {
       padding-left: 78px;
@@ -268,6 +295,7 @@
   }
 
   .program__description {
+    width: 480px;
     padding: 0 0 12px;
   }
 
@@ -282,6 +310,7 @@
   }
 
   .program__food {
+    top: -81%;
     left: 79px;
   }
 }

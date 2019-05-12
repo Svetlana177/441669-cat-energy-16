@@ -74,6 +74,7 @@
   margin: 0 auto 14px;
   display: flex;
   justify-content: space-between;
+  font-family: $font-arial;
 }
 
 .catalog__item-else {
@@ -133,8 +134,8 @@
 
 .catalog__table-field {
   &:first-child {
-    margin: 0 64px 0 0;
-    padding-right: 73px;
+    // margin: 0 64px 0 0;
+    padding-right: 68px;
   }
 
   &:nth-child(2n) {
@@ -150,8 +151,8 @@
   text-align: left;
   color: $second-color;
   text-transform: uppercase;
-  width: 76px;
-  margin: 25px 0 18px 0;
+  width: 77px;
+  margin: 25px 150px 18px 0;
 }
 
 .catalog__table {
@@ -228,7 +229,6 @@
     border-bottom: none;
     margin: 0 57px 154px 0;
     background: $color-grey;
-    // background: lemonchiffon;
 
     &--plus {
       width: 31px;
@@ -240,8 +240,12 @@
       border: 1px solid #e6e6e6;
     }
 
-    &:nth-child(7n),
-    &:nth-child(8n) {
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
       margin-bottom: 0;
     }
   }
@@ -281,10 +285,6 @@
     display: flex;
     width: 707px;
     flex-wrap: wrap;
-
-    & li:nth-child(2n) {
-      margin-right: 0;
-    }
   }
 
   .catalog__header {
@@ -310,7 +310,7 @@
     line-height: 1;
     width: 137px;
     text-align: center;
-    margin: 0 auto 28px;
+    margin: 130px auto 28px;
   }
 
   .catalog__food {
@@ -365,10 +365,6 @@
     margin-top: -89px;
   }
 
-  // .catalog__item-wrapper {
-  //   padding-top: 55px;
-  // }
-
   .catalog__show {
     padding-top: 42px;
   }
@@ -408,7 +404,7 @@
 
 
   .catalog__product {
-    margin: 0 auto;
+    margin: 150px auto 0;
   }
 
   .catalog__table {
@@ -430,18 +426,24 @@
     padding-bottom: 33px;
     margin: 0 80px 129px 0;
 
-    // background-color: rgba(173, 255, 47, 0.2);
-
     &--wrapper {
       background: none;
       border: 1px solid #e6e6e6;
     }
 
-    &:nth-child(5n),
-    &:nth-child(6n),
-    &:nth-child(7n),
-    &:nth-child(8n) {
+    &:last-child,
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
       margin-bottom: 59px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
   }
 
@@ -461,15 +463,12 @@
     border: none;
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
-  }
 
-
-  .catalog__list li:nth-child(2n) {
-    margin-right: 80px;
-  }
-
-  .catalog__list li:nth-child(4n) {
-    margin-right: 0;
+    .catalog__item-else {
+      &--water {
+        margin-right: 0;
+      }
+    }
   }
 
   .catalog__header-wrapper {
@@ -492,7 +491,7 @@
   }
 
   .catalog__food {
-    width: 160px;
+    width: 170px;
     font-size: 20px;
     margin: 0;
     padding: 27px 0 0;

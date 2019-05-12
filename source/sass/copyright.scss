@@ -6,19 +6,40 @@
   text-align: left;
   text-decoration: none;
   color: $main-color;
-  width: 116px;
-  margin-right: 23px;
+  width: 280px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__develop-html {
+  margin-right: 10px;
 }
 
 .copyright__logo-image {
-  font-family: $font-arial;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  text-decoration: none;
-  color: $main-color;
-  width: 27px;
+  width: 36px;
   height: 34px;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+  }
+}
+
+.copyright__develop-html:hover + .copyright__logo-image {
+  fill: #68b738;
+}
+
+
+@media (min-width: $tablet-width) {
+  .copyright__develop {
+    width: 170px;
+  }
 }
