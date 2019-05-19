@@ -13,7 +13,7 @@
     }
   });
 
-  var link = document.querySelector(".catalog-button");
+  var link = document.querySelectorAll(".catalog-button");
 
   var popup = document.querySelector(".modal__catalog");
   var close = popup.querySelector(".modal-close");
@@ -21,10 +21,13 @@
   var isStorageSupport = true;
   var storage = "";
 
-  link.addEventListener("click", function (evt) {
+link.forEach(function(item) {
+  item.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
   });
+})
+
 
   close.addEventListener("click", function (evt) {
     evt.preventDefault();

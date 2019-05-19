@@ -8,35 +8,38 @@
   padding: 15px 0 27px 19px;
 
   &--products {
-    padding: 31px 0 30px 0;
-    width: 280px;
-    box-sizing: border-box;
-    margin: 0 auto;
+    padding: 31px 0 31px;
     position: relative;
+    margin: 0 auto;
+    width: 233px;
+    border-bottom: none;
   }
 }
 
-.catalog__header-wrapper--products::after {
-  content: "";
-  position: absolute;
-  width: 53px;
-  height: 3px;
-  top: 42px;
-  right: -19px;
-  background-color: $background-leaf;
-}
+.catalog__products {
+  position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 42px;
+    background: linear-gradient(to right, #ffffff, 50%, #68b738 50%, #68b738);
+  }
+}
 
 .catalog__food {
   font-family: $font-oswald;
   font-size: 16px;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 400;
   color: #222222;
   text-align: left;
   text-transform: uppercase;
   width: 260px;
   padding: 0;
+  margin: 0;
 }
 
 .catalog__header {
@@ -51,6 +54,10 @@
   &--else {
     font-size: 24px;
     line-height: 1;
+    position: relative;
+    z-index: 2;
+    background: #ffffff;
+    margin-left: -28px;
   }
 }
 
@@ -65,8 +72,12 @@
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
   border-bottom: 1px solid #e6e6e6;
+
+  &--wrapper {
+    padding-bottom: 16px;
+  }
 }
 
 .catalog__item-price {
@@ -94,7 +105,7 @@
   text-align: center;
   text-transform: uppercase;
   display: block;
-  padding-top: 27px;
+  padding-top: 23px;
   text-decoration: none;
   color: $second-color;
 }
@@ -110,6 +121,8 @@
   width: 160px;
   justify-content: space-between;
   margin-bottom: 15px;
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
 .catalog__block-else {
@@ -117,7 +130,7 @@
   font-family: $font-arial;
   font-size: 14px;
   line-height: 1;
-  padding: 14px 0 14px 0;
+  padding: 12px 0 23px;
   margin: 0 auto;
   text-decoration: none;
 }
@@ -125,6 +138,7 @@
 .catalog__block-link {
   text-decoration: none;
   cursor: pointer;
+  width: 150px;
 }
 
 .catalog__table-field p {
@@ -135,7 +149,7 @@
 .catalog__table-field {
   &:first-child {
     // margin: 0 64px 0 0;
-    padding-right: 68px;
+    padding-right: 59px;
   }
 
   &:nth-child(2n) {
@@ -152,7 +166,7 @@
   color: $second-color;
   text-transform: uppercase;
   width: 77px;
-  margin: 25px 150px 18px 0;
+  margin: 0;
 }
 
 .catalog__table {
@@ -161,6 +175,7 @@
   line-height: 1.33;
   text-align: left;
   color: $main-color;
+  // margin-top: 7px;
 }
 
 .catalog__item-text {
@@ -172,6 +187,7 @@
   line-height: 1.33;
   color: $main-color;
   padding-bottom: 22px;
+  margin: 8px 0 0;
 }
 
 .catalog__image {
@@ -183,10 +199,12 @@
   &--plus {
     opacity: 0.2;
   }
+}
 
-  .catalog__show {
-    font-weight: 500;
-  }
+.catalog__show {
+  font-weight: 400;
+  margin: 20px 0 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -201,21 +219,42 @@
   }
 
   .catalog__header-wrapper {
-    width: 768px;
     border-bottom: none;
     padding: 0;
-    margin-top: 63px;
+    margin: 0 auto;
+
+    &--products {
+      width: 656px;
+    }
   }
 
-  .catalog__header-wrapper--products::after {
-    width: 103%;
+  .catalog__products::after {
+    background: $background-leaf;
     top: 20px;
-    left: -18px;
   }
 
   .catalog__item-price {
-    margin-top: 33px;
+    margin: 20px 36px 0 0;
     font-size: 16px;
+    width: 226px;
+
+    &--value {
+      width: 160px;
+      margin-left: 66px;
+      margin-top: 18px;
+    }
+
+    &--milk {
+      width: 141px;
+      margin-left: 85px;
+      margin-top: 16px;
+    }
+
+    &--vitamins {
+      margin-left: 9px;
+      width: 217px;
+      margin-top: 18px;
+    }
   }
 
   .catalog__wrapper {
@@ -227,8 +266,9 @@
     width: 324px;
     box-sizing: border-box;
     border-bottom: none;
-    margin: 0 57px 154px 0;
+    margin: 0 59px 140px 0;
     background: $color-grey;
+    padding-bottom: 38px;
 
     &--plus {
       width: 31px;
@@ -254,7 +294,10 @@
     width: 708px;
     background: transparent;
     border: 1px solid #e6e6e6;
-    padding-bottom: 40px;
+    padding-bottom: 29px;
+    padding-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
 
     &:last-child {
       margin-bottom: 69px;
@@ -279,6 +322,7 @@
     font-style: normal;
     width: 160px;
     margin: 0 auto;
+    padding-top: 56px;
   }
 
   .catalog__list {
@@ -290,18 +334,19 @@
   .catalog__header {
     font-size: 60px;
     line-height: 1;
-    margin-bottom: 173px;
+    margin-bottom: 164px;
     padding: 0;
     position: relative;
     z-index: 2;
     background: #ffffff;
 
     &--else {
-      width: 384px;
+      width: 372px;
       font-size: 36px;
       text-align: left;
       margin-bottom: 75px;
-      padding-left: 15px;
+      margin-top: 20px;
+      padding-left: 52px;
     }
   }
 
@@ -314,8 +359,9 @@
   }
 
   .catalog__food {
-    font-size: 18px;
-    width: 445px;
+    font-size: 20px;
+    line-height: 1.21;
+    // width: 445px;
   }
 
   .catalog__table {
@@ -326,10 +372,18 @@
 
   .catalog__table-field {
     border-bottom: 1px solid #e6e6e6;
-    padding: 0 0 10px 0;
+    padding: 0 0 5px 0;
 
-    &:first-child {
-      padding-right: 79px;
+    // &:first-child {
+    //   padding-right: 79px;
+    // }
+
+    &--taste {
+      padding-top: 8px;
+    }
+
+    &--price {
+      padding-top: 8px;
     }
 
     &:nth-child(2n) {
@@ -346,6 +400,7 @@
   .catalog__block-else {
     font-size: 16px;
     line-height: 1.25;
+    margin: 0 125px 0 38px;
   }
 
   .catalog__image {
@@ -356,17 +411,31 @@
       width: 61px;
       height: 61px;
     }
+
+    &--pro {
+      height: 201px;
+    }
+
+    &--fish {
+      height: 203px;
+    }
+
+    &--buckwheat {
+      height: 200px;
+    }
   }
 
   .catalog__block-link {
     min-height: 200px;
     display: flex;
     align-items: flex-end;
-    margin-top: -89px;
+    margin-top: -85px;
+    width: auto;
   }
 
   .catalog__show {
-    padding-top: 42px;
+    padding-top: 23px;
+    padding-bottom: 20px;
   }
 }
 
@@ -385,8 +454,8 @@
 
   .catalog__wrapper {
     &--food {
-      width: 900px;
-      margin-right: 74px;
+      width: 1300px;
+      margin: 0 auto 86px;
     }
   }
 
@@ -398,33 +467,51 @@
   .catalog__block-else {
     margin: 0;
     padding: 0;
-    width: 284px;
+    width: 322px;
     text-align: left;
   }
 
+  // .catalog__header {
+  //   &--else {
+  //     margin-left: 24px;
+  //   }
+  // }
 
   .catalog__product {
-    margin: 150px auto 0;
+    margin: 160px auto 12px;
   }
 
   .catalog__table {
-    width: 185px;
-    padding-bottom: 33px;
+    width: 171px;
+    padding-bottom: 31px;
+  }
+
+  .catalog__image--buckwheat {
+    height: auto;
   }
 
   .catalog__table-field {
     border-bottom: 1px solid #e6e6e6;
+    padding: 0 0 8px;
 
-    &:first-child {
-      padding: 0;
+    &--taste {
+      padding: 5px 0 10px;
     }
+
+    &--price {
+      padding: 7px 0 5px;
+    }
+
+    // &:first-child {
+    //   padding: 0;
+    // }
   }
 
   .catalog__item {
     width: 245px;
     padding: 0;
     padding-bottom: 33px;
-    margin: 0 80px 129px 0;
+    margin: 0 80px 142px 0;
 
     &--wrapper {
       background: none;
@@ -448,8 +535,9 @@
   }
 
   .catalog__item-price {
-    margin: 0 86px 0 0;
-    padding-top: 27px;
+    // margin: 0 86px 0 0;
+    padding-top: 12px;
+    margin: 20px 37px 0 0;
   }
 
   .catalog__item-else:last-child {
@@ -459,7 +547,7 @@
   .catalog__item-else {
     width: 900px;
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 0;
     border: none;
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
@@ -475,34 +563,38 @@
     padding: 0;
 
     &--products {
-      width: 100%;
-      margin: 0;
+      margin: 0 auto;
+      width: 1270px;
     }
-  }
-
-  .catalog__header-wrapper--products::after {
-    width: 106%;
-    top: 20px;
-    left: -38px;
   }
 
   .catalog__list {
     width: 1220px;
+
+    &--food {
+      width: 900px;
+      margin: 0 71px 0 43px;
+    }
   }
 
   .catalog__food {
     width: 170px;
     font-size: 20px;
     margin: 0;
-    padding: 27px 0 0;
+    padding: 26px 0 0;
   }
 
   .catalog__block-link {
-    margin-top: -80px;
-    margin-bottom: 18px;
+    margin-top: -77px;
+    margin-bottom: 14px;
   }
 
   .catalog__image {
     width: 245px;
+  }
+
+  .catalog__item-price,
+  .catalog__item-price--value {
+    width: 287px;
   }
 }

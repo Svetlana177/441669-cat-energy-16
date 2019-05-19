@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   z-index: 4;
-  padding: 13px 72px 11px;
+  padding: 11px 72px 11px;
   word-break: break-all;
 }
 
@@ -21,30 +21,34 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-wrap: wrap;
+  width: 280px;
 }
 
 .program__title {
-  margin: 0 0 0 19px;
+  margin: 0 0 0 23px;
   padding: 0 0 0 29px;
   font-size: 24px;
   line-height: 1.54;
   text-transform: uppercase;
   color: $second-color;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   word-break: break-all;
   width: 150px;
 
   &--weight {
-    padding-left: 51px;
+    padding-left: 42px;
   }
 }
 
 .program__item {
-  background-color: $color-grey;
+  // background-color: $color-grey;
+  background: rgba(222, 0, 6, 0.6);
   list-style: none;
-  padding: 31px 35px 21px 20px;
+  padding: 30px 35px 21px 20px;
   position: relative;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -60,7 +64,7 @@
     margin-right: 20px;
     background-color: $background-leaf;
     border-radius: 50%;
-    top: 25px;
+    top: 23px;
     left: 22px;
     z-index: 1;
   }
@@ -93,11 +97,12 @@
   text-align: left;
   font-size: 16px;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
   color: $second-color;
   padding-top: 20px;
+  padding-left: 5px;
   display: block;
   cursor: pointer;
 
@@ -106,7 +111,8 @@
     position: absolute;
     width: 25px;
     height: 12px;
-    left: 126px;
+    left: 114px;
+    bottom: 23px;
     background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
     background-position: right center;
@@ -144,7 +150,7 @@
 }
 
 .program__wrapper {
-  margin-top: 31px;
+  margin-top: 22px;
   margin-bottom: 18px;
 }
 
@@ -154,13 +160,22 @@
     padding: 0;
   }
 
+  .program__list {
+    width: 708px;
+  }
+
   .program__description {
     border-bottom: none;
     font-size: 16px;
     line-height: 1.5;
     padding-bottom: 37px;
-    margin: 24px 0 0 0;
+    margin: 24px 5px 0;
     width: 384px;
+
+    &--weight {
+      margin: 24px 0 0 4px;
+      width: 344px;
+    }
   }
 
   .program__wrapper {
@@ -170,7 +185,8 @@
 
   .program__item {
     background-color: $color-grey;
-    padding: 75px 0 60px 48px;
+    // background: rgba(159, 0.3, 0.6, 0.2);
+    padding: 75px 0 61px 48px;
 
     &::after {
       width: 200px;
@@ -209,7 +225,7 @@
     font-size: 36px;
     line-height: 1.03;
     text-align: left;
-    padding: 0;
+    padding: 0 0 0 3px;
     margin: 0;
   }
 
@@ -219,16 +235,16 @@
 
     &::after {
       bottom: 64px;
-      left: 181px;
+      left: 180px;
     }
   }
 
   .program__food {
     position: absolute;
-    width: 280px;
+    width: 246px;
     box-sizing: border-box;
-    top: -76%;
-    left: 89px;
+    top: -78.5%;
+    left: 88px;
     font-size: 20px;
     padding: 16px 29px 13px 26px;
   }
@@ -241,7 +257,9 @@
 
   .program__list {
     display: flex;
-    margin: 80px 0 79px;
+    margin: 80px 0 0;
+    width: 1220px;
+    box-sizing: border-box;
   }
 
   .program__item {
@@ -249,18 +267,27 @@
     box-sizing: border-box;
     padding: 80px 56px 60px 52px;
     text-align: center;
+    // margin-right: 80px;
+    margin-bottom: 79px;
 
-    &--loss {
-      margin-bottom: 0;
-      margin-right: 80px;
-    }
+    // &--loss {
+    //   margin-bottom: 0;
+    // }
 
     &::after {
       width: 100px;
       height: 100px;
       margin-right: 0;
-      left: 57px;
-      top: 47px;
+      left: 51px;
+      top: 49px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 80px;
     }
   }
 
@@ -271,8 +298,8 @@
     &--loss {
       width: 71px;
       height: 97px;
-      top: 37px;
-      left: 71px;
+      top: 44px;
+      left: 66px;
     }
 
     &--set {
@@ -287,19 +314,26 @@
     text-align: center;
     padding-bottom: 45px;
     padding-left: 38px;
-    margin-left: 79px;
+    margin-left: 90px;
 
     &--weight {
-      padding-left: 78px;
+      padding-left: 61px;
     }
   }
 
   .program__description {
     width: 480px;
     padding: 0 0 12px;
+    margin: 25px 0 0;
+
+    &--weight {
+      margin: 24px 0 0 0;
+    }
   }
 
   .program__link {
+    padding-left: 0;
+
     &::after {
       left: 182px;
     }
@@ -310,7 +344,7 @@
   }
 
   .program__food {
-    top: -81%;
+    top: -71%;
     left: 79px;
   }
 }

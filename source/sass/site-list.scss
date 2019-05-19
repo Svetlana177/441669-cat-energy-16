@@ -11,15 +11,15 @@
 
 .site-list__link {
   display: block;
-  padding: 22px 20px;
+  // padding: 22px 20px;
 
   color: $second-color;
   text-decoration: none;
   cursor: pointer;
 
-  &--padding {
-    padding-bottom: 24px;
-  }
+  // &--padding {
+  //   padding-bottom: 24px;
+  // }
 }
 
 .site-list a[href] {
@@ -37,14 +37,15 @@
 @media (max-width: $mobile-width-only) {
   .site-list__item {
     border-bottom: 1px solid #e6e6e6;
+    padding: 23px 0 22px;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .site-list :last-child {
-    padding: 0;
-  }
-
   .social__list {
     align-items: center;
   }
@@ -53,10 +54,10 @@
     font-size: 18px;
     line-height: 1.39;
     font-weight: normal;
-    padding: 0 33px 0 0;
+    padding: 2px 35px 0 0;
 
-    & :last-child {
-      padding: 0;
+    &:nth-child(4n+3) {
+      padding-right: 0;
     }
   }
 
