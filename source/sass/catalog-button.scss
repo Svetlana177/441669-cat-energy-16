@@ -2,12 +2,12 @@
   font-size: 16px;
   line-height: 1.25;
   margin: 0 auto;
-  padding: 13px 106px 12px 111px;
+  padding: 9px 109px 8px 108px;
   word-break: break-all;
 }
 
 .catalog-button__show {
-  padding: 18px 28px 16px;
+  padding: 12px 23px 16px;
   font-family: $font-oswald;
   font-size: 16px;
   font-weight: normal;
@@ -29,21 +29,25 @@
 
 @media (min-width: $tablet-width) {
   .catalog-button {
-    padding: 13px 91px 12px 95px;
+    padding: 10px 94px 10px 95px;
 
     &--else {
-      padding: 13px 283px 12px 282px;
+      padding: 9px 290px 9px 282px;
+    }
+
+    &--show {
+      padding: 16px 4px 12px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-button {
-    padding: 13px 52px 12px 53px;
+    padding: 11px 52px 10px 53px;
 
     &--else {
-      padding: 13px 91px 12px 93px;
-      margin: 15px 0;
+      padding: 13px 91px 13px 93px;
+      margin: 12px 0;
     }
   }
 

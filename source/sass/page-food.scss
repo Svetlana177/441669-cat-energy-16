@@ -1,15 +1,17 @@
 .page-food {
   text-align: center;
   background-color: $background-leaf;
-  background-image: linear-gradient(to top, #ffffff 175px, transparent 175px), url("../img/index-background-mobile@1x.jpg");
+  background-image: linear-gradient(to top, #ffffff 137px, transparent 137px), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center bottom 132px;
+  background-size: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: linear-gradient(to top, #ffffff 175px, transparent 175px), url("../img/index-background-mobile@2x.jpg");
+    background-color: $background-leaf;
+    background-image: linear-gradient(to top, #ffffff 137px, transparent 137px), url("../img/index-background-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-position: center bottom, center bottom 132px;
-    background-size: auto, 320px auto;
+    background-size: 100%;
   }
 }
 

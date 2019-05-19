@@ -7,11 +7,11 @@
 
 .page-header__logo {
   width: 191px;
-  height: 60px;
+  height: 54px;
   padding-left: 20px;
   cursor: pointer;
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 11px;
 }
 
 .page-header a[href] {
@@ -34,7 +34,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     width: 750px;
-    margin: 22px auto 36px;
+    margin: 22px auto 35px;
     flex-direction: row;
   }
 
@@ -45,9 +45,10 @@
   }
 
   .page-header__logo {
-    margin-right: 96px;
+    padding-top: 1px;
     height: 83px;
     width: 174px;
+    margin-right: 91px;
   }
 
   .page-header__logo-image {
@@ -59,7 +60,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1300px;
-    margin: 0 auto 59px;
+    margin: 0 auto 24px;
     box-sizing: border-box;
     position: relative;
 
@@ -100,6 +101,7 @@
     width: 610px;
     height: 113px;
     padding: 0;
+    margin-right: 0;
   }
 
   .page-header__logo-image {

@@ -2,13 +2,21 @@
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 125px;
-  margin: 24px auto 21px;
+  width: 138px;
+  margin: 15px auto 21px;
+  cursor: pointer;
 }
 
 .social__link {
   cursor: pointer;
+  margin-right: 15px;
+  display: block;
+}
+
+.social__item {
+  margin-top: 7px;
 }
 
 .social__svg {
@@ -59,6 +67,10 @@
   .social__svg-fb {
     width: 14px;
     height: 28px;
+  }
+
+  .social__item {
+    margin-top: 0;
   }
 }
 

@@ -23,7 +23,7 @@
   content: "";
 
   position: absolute;
-  top: -48px;
+  top: -44px;
   left: 26px;
 
   width: 25px;
@@ -48,7 +48,7 @@
     content: "";
 
     position: absolute;
-    top: 26px;
+    top: 34px;
     left: 27px;
 
     width: 22px;
@@ -121,6 +121,7 @@
   .main-nav {
     width: 456px;
     display: flex;
+    flex-wrap: wrap;
     min-height: auto;
     border-top: none;
   }
@@ -131,6 +132,8 @@
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
+    width: 450px;
   }
 
   .main-nav__toggle {
@@ -141,7 +144,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
     z-index: 2;
-    margin-left: 65px;
+    margin-left: 112px;
   }
 
   .main-nav {
@@ -153,6 +156,8 @@
   }
 
   .main-nav__list {
+    width: 500px;
+
     &--form {
       padding-left: 144px;
     }
