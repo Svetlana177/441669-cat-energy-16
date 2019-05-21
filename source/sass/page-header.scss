@@ -60,12 +60,13 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1300px;
-    margin: 0 auto 24px;
+    margin: 0 auto 22px;
     box-sizing: border-box;
     position: relative;
 
     &--cat {
       width: 100%;
+      margin: 0 auto 58px;
     }
 
     &--cat::before {
