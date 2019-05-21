@@ -43,8 +43,7 @@
 }
 
 .program__item {
-  // background-color: $color-grey;
-  background: rgba(222, 0, 6, 0.6);
+  background-color: $color-grey;
   list-style: none;
   padding: 30px 35px 21px 20px;
   position: relative;
@@ -185,7 +184,6 @@
 
   .program__item {
     background-color: $color-grey;
-    // background: rgba(159, 0.3, 0.6, 0.2);
     padding: 75px 0 61px 48px;
 
     &::after {
@@ -246,7 +244,7 @@
     top: -78.5%;
     left: 88px;
     font-size: 20px;
-    padding: 16px 29px 13px 26px;
+    padding: 16px 29px 13px 24px;
   }
 }
 
@@ -267,12 +265,7 @@
     box-sizing: border-box;
     padding: 80px 56px 60px 52px;
     text-align: center;
-    // margin-right: 80px;
     margin-bottom: 79px;
-
-    // &--loss {
-    //   margin-bottom: 0;
-    // }
 
     &::after {
       width: 100px;

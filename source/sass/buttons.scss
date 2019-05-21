@@ -24,17 +24,15 @@
   &--form {
     display: block;
     padding: 11px 86px 11px;
-    // margin: 25px auto 10px;
     border: none;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .button {
     &--form {
       font-size: 20px;
-      padding: 17px 67px 15px 63px;
+      padding: 14px 67px 13px 63px;
       margin: 0;
     }
   }
