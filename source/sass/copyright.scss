@@ -1,0 +1,49 @@
+.copyright__develop {
+  font-family: $font-arial;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: left;
+  text-decoration: none;
+  color: $main-color;
+  width: 280px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__develop-html {
+  margin-right: 10px;
+}
+
+.copyright__logo-image {
+  width: 36px;
+  height: 34px;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+  }
+}
+
+.copyright__develop-html:hover + .copyright__logo-image {
+  fill: #68b738;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__develop {
+    width: 170px;
+  }
+
+  .copyright__logo-image {
+    width: 41px;
+    height: 41px;
+  }
+}

@@ -1,0 +1,33 @@
+.page-main {
+  margin: 0 auto;
+}
+
+.page-main__img {
+  width: 280px;
+  height: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__img {
+    position: relative;
+    z-index: 3;
+    width: 709px;
+    height: 609px;
+    top: 21px;
+    left: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    background: none;
+  }
+
+  .page-main__img {
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    top: 140px;
+    left: 38%;
+  }
+}

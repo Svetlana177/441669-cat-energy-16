@@ -1,0 +1,100 @@
+.gift {
+  width: 280px;
+  margin: 39px auto 35px;
+  padding-top: 65px;
+  padding-bottom: 23px;
+  box-sizing: border-box;
+  background: #68b738 url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: #68b738 url("../img/gift-photo-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+.gift__link {
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 113px;
+}
+
+.gift__link-svg {
+  fill: #ffffff;
+}
+
+.gift__title {
+  width: 159px;
+  font-family: $font-arial;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.25;
+  text-align: center;
+  margin: 64px auto 0;
+  word-break: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    background: #68b738 url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    width: 714px;
+    justify-content: space-between;
+    margin: 0 auto 76px;
+    padding-bottom: 69px;
+    position: static;
+    padding-top: 68px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #68b738 url("../img/gift-photo-tablet@2x.jpg");
+      background-size: cover;
+      background-position: bottom;
+    }
+  }
+
+  .gift__title {
+    width: 159px;
+    font-family: "Arial", sans-serif;
+    text-align: left;
+    margin: 0 129px 0 0;
+    padding: 0;
+  }
+
+  .gift__link {
+    padding-left: 93px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    padding: 28px 0;
+    background: #68b738 url("../img/gift-photo-desktop@1x.jpg");
+    background-size: cover;
+    margin: 0;
+    flex-wrap: wrap;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #68b738 url("../img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  .gift__title {
+    margin: 0;
+    text-align: center;
+  }
+
+  .gift__link {
+    padding: 0 43px;
+
+    &--present {
+      width: 60px;
+      padding: 40px 96px 49px 93px;
+    }
+  }
+}

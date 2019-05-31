@@ -1,0 +1,33 @@
+.logo-link {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  color: $second-color;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-decoration: none;
+  border-bottom: 1px solid #e6e6e6;
+  display: block;
+  padding-bottom: 30px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo-link {
+    width: 128px;
+    margin: 0;
+    margin-right: 156px;
+    border-bottom: none;
+    padding-top: 27px;
+  }
+}
